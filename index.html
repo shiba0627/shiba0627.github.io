@@ -1,18 +1,269 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Naofumi Tonegawa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naofumi Tonegawa — Gaze-Controlled Assistive Robotics</title>
+<meta name="description" content="Naofumi Tonegawa (舍川尚史) — Master's student at the University of Yamanashi working on dwell-based gaze-controlled powered wheelchairs with obstacle detection, evaluated at a special needs school.">
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5a6572; --line:#dfe5ec; --bg:#f7f9fb;
+    --accent:#1f6fa8; --accent2:#b3392e; --card:#ffffff;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+       color:var(--ink); background:var(--bg); line-height:1.75;}
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  header.hero{background:linear-gradient(135deg,#14324a 0%,#1f6fa8 70%,#2b86c4 100%);
+    color:#fff; padding:56px 20px 44px;}
+  .wrap{max-width:920px; margin:0 auto; padding:0 20px;}
+  .hero h1{font-size:2.4rem; letter-spacing:.02em;}
+  .hero .jp{font-size:1.05rem; opacity:.85; margin-top:2px;}
+  .hero .tagline{margin-top:14px; font-size:1.12rem; font-weight:600;}
+  .hero .affil{margin-top:8px; font-size:.98rem; opacity:.92;}
+  .hero .chips{margin-top:18px;}
+  .chip{display:inline-block; border:1px solid rgba(255,255,255,.55); color:#fff;
+    border-radius:999px; padding:2px 12px; margin:0 6px 8px 0; font-size:.83rem;}
+  nav.toc{position:sticky; top:0; background:rgba(255,255,255,.95); border-bottom:1px solid var(--line);
+    z-index:10;}
+  nav.toc .wrap{display:flex; flex-wrap:wrap; gap:4px 18px; padding-top:10px; padding-bottom:10px;}
+  nav.toc a{color:var(--ink); font-size:.92rem; font-weight:600;}
+  main{padding:10px 0 30px;}
+  section{padding:26px 0 6px;}
+  h2{font-size:1.45rem; border-left:6px solid var(--accent); padding-left:10px; margin-bottom:14px;}
+  h3{font-size:1.12rem; margin:18px 0 6px; color:#14324a;}
+  p{margin-bottom:10px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:18px 20px; margin-bottom:16px;}
+  .card h3{margin-top:0;}
+  table{border-collapse:collapse; width:100%; margin:10px 0; font-size:.95rem;}
+  th,td{border:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top;}
+  th{background:#eef4f9; width:26%;}
+  ul{margin:6px 0 10px 1.3em;}
+  li{margin-bottom:4px;}
+  .pub{margin-bottom:14px;}
+  .pub .title{font-weight:700;}
+  .pub .meta{color:var(--sub); font-size:.93rem;}
+  .badge{display:inline-block; background:var(--accent2); color:#fff; border-radius:4px;
+    padding:0 8px; font-size:.78rem; font-weight:700; margin-left:8px; vertical-align:middle;}
+  .badge.blue{background:var(--accent);}
+  .timeline{list-style:none; margin-left:0;}
+  .timeline li{border-left:3px solid var(--line); padding:0 0 12px 16px; position:relative;}
+  .timeline li::before{content:""; position:absolute; left:-7px; top:8px; width:11px; height:11px;
+    border-radius:50%; background:var(--accent);}
+  .timeline .when{font-weight:700; color:#14324a;}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:680px){ .grid{grid-template-columns:1fr;} .hero h1{font-size:1.9rem;} }
+  .small{font-size:.9rem; color:var(--sub);}
+  footer{border-top:1px solid var(--line); padding:22px 0 40px; color:var(--sub); font-size:.9rem;}
+</style>
 </head>
 <body>
-  <h1>Naofumi Tonegawa</h1>
-  <p>Master's student working on gaze-controlled assistive robotics.</p>
-  <h2>Research</h2>
-  <p>TOGAKUSHI2 - Dwell-based gaze-controlled powered wheelchair</p>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Naofumi Tonegawa</h1>
+    <div class="jp">舍川 尚史</div>
+    <div class="tagline">Master's student working on gaze-controlled assistive robotics.</div>
+    <div class="affil">
+      Kotani&ndash;Watanabe Laboratory, Course of Mechatronics,<br>
+      Graduate School of Engineering, University of Yamanashi, Japan
+    </div>
+    <div class="chips">
+      <span class="chip">Assistive Robotics</span>
+      <span class="chip">Gaze Interaction</span>
+      <span class="chip">Powered Wheelchairs</span>
+      <span class="chip">3D LiDAR</span>
+      <span class="chip">ROS 2</span>
+      <span class="chip">Real-World Evaluation</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#career">Education &amp; Career</a>
+    <a href="#news">News</a>
+    <a href="#links">Links</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I am a second-year master's student in the Kotani&ndash;Watanabe Laboratory at the
+    University of Yamanashi, Japan. My research focuses on <strong>assistive robotics</strong>,
+    in particular a powered wheelchair that people with severe physical disabilities can
+    operate using only their <strong>gaze</strong>.
+  </p>
+  <p>
+    In my project, <strong>TOGAKUSHI2</strong>, the user drives a WHILL Model CR powered wheelchair
+    by dwelling their gaze on directional buttons shown on a PC screen. The system combines
+    dwell-based gaze input with obstacle detection using a 3D LiDAR, and it has been trained
+    and evaluated together with an actual user at a special needs school over several months.
+    I care about validating assistive technology in the real environment where it will be used,
+    not only in the laboratory.
+  </p>
+  <p>
+    My master's thesis is titled
+    「視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価」
+    (<em>Research and Development of a Dwell-Based Gaze-Controlled Powered Wheelchair and Its
+    Training and Evaluation at a Special Needs School</em>).
+    After graduating in March 2027, I will join Seiko Epson Corporation in April 2027.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research — TOGAKUSHI2</h2>
+  <div class="card">
+    <h3>Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection</h3>
+    <p>
+      People who cannot use a conventional joystick because of motor disabilities need an
+      alternative way to drive a powered wheelchair. TOGAKUSHI2 uses <strong>dwell-based gaze
+      input</strong>: looking at an on-screen button for a short dwell time selects it, so the
+      wheelchair can be driven hands-free, without calibration-heavy pointing and without
+      physical switches.
+    </p>
+    <h3>System overview</h3>
+    <table>
+      <tr><th>Gaze input terminal</th>
+          <td>A PC running a graphical interface with large directional buttons. The user selects a
+              button by dwelling their gaze on it; the selected command is sent to the robot side
+              over UDP. (Repository: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>)</td></tr>
+      <tr><th>Robot control</th>
+          <td>A ROS 2 Humble workspace (19 packages) that receives drive commands, manages the
+              wheelchair state, and generates motion commands.
+              (Repository: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>)</td></tr>
+      <tr><th>Platform</th>
+          <td>WHILL Model CR powered wheelchair.</td></tr>
+      <tr><th>Obstacle detection</th>
+          <td>A 3D LiDAR monitors the surroundings of the wheelchair; detected obstacles are fed
+              back to the interface and used to support safe driving.</td></tr>
+      <tr><th>Path generation</th>
+          <td>Generates a path for passing through doorways without relying on a pre-built map,
+              supporting driving in ordinary school and home environments.</td></tr>
+    </table>
+    <h3>Evaluation at a special needs school</h3>
+    <p>
+      The system was evaluated in a real environment: a student at a special needs school used
+      the wheelchair in training and evaluation sessions held over a period of three months
+      (six sessions). The evaluation confirmed that gaze-only driving is feasible in a real
+      school environment and provided longitudinal observations on how the user's driving
+      changes with repeated training.
+    </p>
+    <h3>Research keywords</h3>
+    <p class="small">
+      Gaze-controlled wheelchair / dwell-based input / assistive technology / obstacle detection /
+      3D LiDAR / ROS 2 / human&ndash;robot interaction / special needs education / real-world evaluation
+    </p>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications &amp; Presentations</h2>
+
+  <div class="pub">
+    <div class="title">Development of a Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection and Its Evaluation at a Special Needs School
+      <span class="badge">Accepted</span></div>
+    <div class="meta">Naofumi Tonegawa, Hiromi Watanabe, Shinji Kotani<br>
+      The 2027 IEEE/SICE International Symposium on System Integration (SII 2027),
+      Kobe International Conference Center, Japan, January 11&ndash;14, 2027. Contributed Paper, oral presentation.</div>
+  </div>
+
+  <div class="pub">
+    <div class="title">地図を用いない視線入力式電動車いすの出入り口通過の経路生成
+      <span class="badge blue">IS2-16</span></div>
+    <div class="meta">舍川尚史<br>
+      ViEW2026 ビジョン技術の実利用ワークショップ, パシフィコ横浜, December 3&ndash;4, 2026.
+      インタラクティブセッション2 (December 3, 14:40&ndash;15:50), ポスター発表.</div>
+  </div>
+
+  <div class="pub">
+    <div class="title">視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価</div>
+    <div class="meta">Master's thesis, University of Yamanashi (to be presented in February 2027).</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></h3>
+      <p>ROS 2 Humble workspace for the gaze-controlled WHILL Model CR wheelchair.
+         19 packages covering command reception over UDP, state management, joystick command
+         generation, and integration with the WHILL platform.</p>
+      <p class="small">ROS 2 Humble / Python / UDP / WHILL Model CR</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></h3>
+      <p>Graphical user interface running on the gaze-input PC. Large directional buttons are
+         selected by gaze dwelling; the interface also displays obstacle information received
+         from the robot side.</p>
+      <p class="small">Python / GUI / gaze interaction</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills &amp; Tools</h2>
+  <table>
+    <tr><th>Robotics</th><td>ROS 2 (Humble), powered wheelchair control (WHILL Model CR), 3D LiDAR obstacle detection, state management and safety design</td></tr>
+    <tr><th>Programming</th><td>Python (robot control nodes, GUI applications), UDP network communication</td></tr>
+    <tr><th>Interaction</th><td>Gaze tracking and dwell-based selection, interface design for users with motor disabilities</td></tr>
+    <tr><th>Development</th><td>Git / GitHub, Ubuntu / Linux, LaTeX</td></tr>
+    <tr><th>Field work</th><td>Designing and running user evaluations at a special needs school, longitudinal training sessions</td></tr>
+  </table>
+</section>
+
+<section id="career">
+  <h2>Education &amp; Career</h2>
+  <table>
+    <tr><th>Apr 2027 &ndash;</th><td>Seiko Epson Corporation (scheduled to join).</td></tr>
+    <tr><th>Apr 2025 &ndash; Mar 2027</th><td>M.S. in Engineering (expected), Course of Mechatronics, Graduate School of Engineering, University of Yamanashi. Kotani&ndash;Watanabe Laboratory.</td></tr>
+    <tr><th>Apr 2021 &ndash; Mar 2025</th><td>B.Eng., Department of Mechatronics, Faculty of Engineering, University of Yamanashi.</td></tr>
+    <tr><th>&ndash; Mar 2021</th><td>Nagano Prefectural Yashiro High School, Nagano, Japan.</td></tr>
+  </table>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="timeline">
+    <li><span class="when">Jan 2027</span> — Oral presentation at SII 2027 in Kobe, Japan.</li>
+    <li><span class="when">Dec 2026</span> — Poster presentation (IS2-16) at ViEW2026 in Yokohama, Japan.</li>
+    <li><span class="when">Oct 2026</span> — Our paper on the gaze-controlled wheelchair was accepted to SII 2027 as a Contributed Paper.</li>
+    <li><span class="when">Nov 2026</span> — This homepage was published on GitHub Pages.</li>
+  </ul>
+</section>
+
+<section id="links">
   <h2>Links</h2>
   <ul>
-    <li><a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></li>
-    <li><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></li>
+    <li>GitHub: <a href="https://github.com/shiba0627">github.com/shiba0627</a></li>
+    <li>ROS 2 workspace: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></li>
+    <li>Gaze-input GUI: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></li>
+    <li>SII 2027: <a href="https://sii2027.sice-si.org/">sii2027.sice-si.org</a></li>
   </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Naofumi Tonegawa. Built with GitHub Pages.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
