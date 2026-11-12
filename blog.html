@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Naofumi Tonegawa</title>
+<meta name="description" content="Blog of Naofumi Tonegawa — notes on gaze-controlled assistive robotics research, conferences, and daily progress.">
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5a6572; --line:#dfe5ec; --bg:#f7f9fb;
+    --accent:#1f6fa8; --accent2:#b3392e; --card:#ffffff;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+       color:var(--ink); background:var(--bg); line-height:1.75;}
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  header.hero{background:linear-gradient(135deg,#14324a 0%,#1f6fa8 70%,#2b86c4 100%);
+    color:#fff; padding:40px 20px 32px;}
+  .wrap{max-width:920px; margin:0 auto; padding:0 20px;}
+  .hero h1{font-size:2rem;}
+  .hero .sub{margin-top:6px; opacity:.9;}
+  nav.toc{background:rgba(255,255,255,.95); border-bottom:1px solid var(--line);}
+  nav.toc .wrap{display:flex; flex-wrap:wrap; gap:4px 18px; padding-top:10px; padding-bottom:10px;}
+  nav.toc a{color:var(--ink); font-size:.92rem; font-weight:600;}
+  main{padding:26px 0 30px;}
+  article.post{background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:20px 22px; margin-bottom:18px;}
+  article.post .date{color:var(--accent2); font-weight:700; font-size:.9rem;}
+  article.post h2{font-size:1.3rem; margin:4px 0 8px; color:#14324a;}
+  article.post p{margin-bottom:8px;}
+  .tag{display:inline-block; background:#eef4f9; border:1px solid var(--line); color:#14324a;
+    border-radius:999px; padding:0 10px; font-size:.78rem; margin-right:6px;}
+  footer{border-top:1px solid var(--line); padding:22px 0 40px; color:var(--sub); font-size:.9rem;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Blog</h1>
+    <div class="sub">Naofumi Tonegawa — research notes, conference reports, and small updates.</div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="index.html">← Home</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#publications">Publications</a>
+    <a href="index.html#news">News</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!--
+    ★ 新しい記事の書き方 ★
+    下の <article class="post"> ... </article> のブロックをコピーして、
+    このコメントのすぐ下（一番上）に貼り、日付・タイトル・本文を書き換えるだけです。
+    新しい記事ほど上に置きます。
+  -->
+
+  <article class="post" id="view2026-program">
+    <div class="date">2026-11-10</div>
+    <h2>ViEW2026のプログラムが公開されました</h2>
+    <p>
+      ViEW2026（12月3日・4日、パシフィコ横浜）のプログラムが公開され、私の発表は
+      インタラクティブセッション2の <strong>IS2-16</strong>「地図を用いない視線入力式電動車いすの出入り口通過の経路生成」に決まりました。
+      発表は12月3日 14:40–15:50 のポスター形式です。ポスターの作製を進めます。
+    </p>
+    <p><span class="tag">ViEW2026</span><span class="tag">conference</span></p>
+  </article>
+
+  <article class="post" id="homepage">
+    <div class="date">2026-11-10</div>
+    <h2>ホームページを公開しました</h2>
+    <p>
+      GitHub Pagesで個人ホームページを公開しました。研究内容や発表業績をまとめています。
+      研究の進捗や学会参加の記録は、このブログに少しずつ書いていく予定です。
+    </p>
+    <p><span class="tag">news</span></p>
+  </article>
+
+  <article class="post" id="sii2027-accepted">
+    <div class="date">2026-10-31</div>
+    <h2>SII 2027に論文が採択されました</h2>
+    <p>
+      視線入力式電動車いすに関する論文 "Development of a Dwell-Based Gaze-Controlled Powered
+      Wheelchair with Obstacle Detection and Its Evaluation at a Special Needs School" が、
+      IEEE/SICE International Symposium on System Integration (SII 2027) に Contributed Paper として採択されました。
+      2027年1月に神戸国際会議場で口頭発表を行います。特別支援学校での評価にご協力いただいた皆様に感謝いたします。
+    </p>
+    <p><span class="tag">SII 2027</span><span class="tag">paper</span></p>
+  </article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Naofumi Tonegawa. <a href="index.html">Back to Home</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
