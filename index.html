@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naofumi Tonegawa — Gaze-Controlled Assistive Robotics</title>
+<script>try{document.documentElement.dataset.lang=(localStorage.getItem('mugi-lang')==='ja')?'ja':'en';}catch(e){document.documentElement.dataset.lang='en';}</script>
 <meta name="description" content="Naofumi Tonegawa (舍川尚史) — Master's student at the University of Yamanashi working on dwell-based gaze-controlled powered wheelchairs with obstacle detection, evaluated at a special needs school.">
 <style>
   :root{
@@ -98,6 +99,12 @@
   /* public calendar */
   .cal-wrap{border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#fff;}
   .cal-wrap iframe{display:block; width:100%; height:600px; border:0;}
+  /* language toggle */
+  .l-ja{display:none;}
+  html[data-lang="ja"] .l-ja{display:inline;}
+  html[data-lang="ja"] .l-en{display:none;}
+  nav.toc button{margin-left:auto; background:#fff; border:1px solid var(--line); border-radius:999px;
+    padding:2px 12px; font-size:.85rem; font-weight:700; cursor:pointer; color:var(--ink); font-family:inherit;}
   @media (prefers-reduced-motion: reduce){
     *{animation:none !important; transition:none !important;}
     .reveal{opacity:1; transform:none;}
@@ -110,219 +117,237 @@
   <div class="wrap">
     <h1>Naofumi Tonegawa</h1>
     <div class="jp">舍川 尚史</div>
-    <div class="tagline">Master's student working on gaze-controlled assistive robotics.</div>
-    <div class="affil">
-      Kotani&ndash;Watanabe Laboratory, Course of Mechatronics,<br>
-      Graduate School of Engineering, University of Yamanashi, Japan
-    </div>
+    <div class="tagline"><span class="l-en">Master's student working on gaze-controlled assistive robotics.</span><span class="l-ja">視線制御による支援ロボティクスに取り組む修士課程の学生です。</span></div>
+    <div class="affil"><span class="l-en">Kotani&ndash;Watanabe Laboratory, Course of Mechatronics,<br>
+      Graduate School of Engineering, University of Yamanashi, Japan</span><span class="l-ja">山梨大学大学院 工学専攻 メカトロニクスコース<br>
+      小谷・渡辺研究室</span></div>
     <div class="chips">
-      <span class="chip">Assistive Robotics</span>
-      <span class="chip">Gaze Interaction</span>
-      <span class="chip">Powered Wheelchairs</span>
+      <span class="chip"><span class="l-en">Assistive Robotics</span><span class="l-ja">支援ロボティクス</span></span>
+      <span class="chip"><span class="l-en">Gaze Interaction</span><span class="l-ja">視線インタラクション</span></span>
+      <span class="chip"><span class="l-en">Powered Wheelchairs</span><span class="l-ja">電動車いす</span></span>
       <span class="chip">3D LiDAR</span>
       <span class="chip">ROS 2</span>
-      <span class="chip">Real-World Evaluation</span>
+      <span class="chip"><span class="l-en">Real-World Evaluation</span><span class="l-ja">実環境評価</span></span>
     </div>
   </div>
 </header>
 
 <nav class="toc">
   <div class="wrap">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#career">Education &amp; Career</a>
-    <a href="#news">News</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#blog">Blog</a>
-    <a href="#explosion">Explosion</a>
-    <a href="#links">Links</a>
+    <a href="#about"><span class="l-en">About</span><span class="l-ja">概要</span></a>
+    <a href="#research"><span class="l-en">Research</span><span class="l-ja">研究</span></a>
+    <a href="#publications"><span class="l-en">Publications</span><span class="l-ja">業績</span></a>
+    <a href="#projects"><span class="l-en">Projects</span><span class="l-ja">プロジェクト</span></a>
+    <a href="#skills"><span class="l-en">Skills</span><span class="l-ja">スキル</span></a>
+    <a href="#career"><span class="l-en">Education &amp; Career</span><span class="l-ja">学歴・職歴</span></a>
+    <a href="#news"><span class="l-en">News</span><span class="l-ja">ニュース</span></a>
+    <a href="#schedule"><span class="l-en">Schedule</span><span class="l-ja">予定</span></a>
+    <a href="#blog"><span class="l-en">Blog</span><span class="l-ja">ブログ</span></a>
+    <a href="#explosion"><span class="l-en">Explosion</span><span class="l-ja">爆裂</span></a>
+    <a href="#links"><span class="l-en">Links</span><span class="l-ja">リンク</span></a>
+    <button id="langBtn" type="button">日本語</button>
   </div>
 </nav>
 
 <main class="wrap">
 
 <section id="about">
-  <h2>About</h2>
-  <p>
-    I am a second-year master's student in the Kotani&ndash;Watanabe Laboratory at the
+  <h2><span class="l-en">About</span><span class="l-ja">概要</span></h2>
+  <p><span class="l-en">I am a second-year master's student in the Kotani&ndash;Watanabe Laboratory at the
     University of Yamanashi, Japan. My research focuses on <strong>assistive robotics</strong>,
     in particular a powered wheelchair that people with severe physical disabilities can
-    operate using only their <strong>gaze</strong>.
+    operate using only their <strong>gaze</strong>.</span><span class="l-ja">山梨大学 小谷・渡辺研究室の修士2年生です。研究テーマは<strong>支援ロボティクス</strong>で、
+    特に、重度の身体障害のある方が<strong>視線</strong>だけで操作できる電動車いすに取り組んでいます。</span>
   </p>
-  <p>
-    In my project, <strong>TOGAKUSHI2</strong>, the user drives a WHILL Model CR powered wheelchair
+  <p><span class="l-en">In my project, <strong>TOGAKUSHI2</strong>, the user drives a WHILL Model CR powered wheelchair
     by dwelling their gaze on directional buttons shown on a PC screen. The system combines
     dwell-based gaze input with obstacle detection using a 3D LiDAR, and it has been trained
     and evaluated together with an actual user at a special needs school over several months.
     I care about validating assistive technology in the real environment where it will be used,
-    not only in the laboratory.
+    not only in the laboratory.</span><span class="l-ja">プロジェクト<strong>TOGAKUSHI2</strong>では、PC画面に表示された方向ボタンを視線で滞留選択することで、
+    WHILL Model CRを運転します。視線滞留入力と3D LiDARによる障害物検知を組み合わせ、
+    特別支援学校で実際の利用者とともに数か月にわたって訓練・評価を行ってきました。
+    研究室の中だけでなく、実際に使われる環境で支援技術を検証することを大切にしています。</span>
   </p>
-  <p>
-    My master's thesis is titled
+  <p><span class="l-en">My master's thesis is titled
     「視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価」
     (<em>Research and Development of a Dwell-Based Gaze-Controlled Powered Wheelchair and Its
     Training and Evaluation at a Special Needs School</em>).
-    After graduating in March 2027, I will join Seiko Epson Corporation in April 2027.
+    After graduating in March 2027, I will join Seiko Epson Corporation in April 2027.</span><span class="l-ja">修士論文の題目は「視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価」です。
+    2027年3月に卒業し、2027年4月にセイコーエプソン株式会社へ入社予定です。</span>
   </p>
 </section>
 
 <section id="research">
-  <h2>Research — TOGAKUSHI2</h2>
+  <h2><span class="l-en">Research</span><span class="l-ja">研究</span> — TOGAKUSHI2</h2>
   <div class="card">
     <h3>Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection</h3>
-    <p>
-      People who cannot use a conventional joystick because of motor disabilities need an
+    <p><span class="l-en">People who cannot use a conventional joystick because of motor disabilities need an
       alternative way to drive a powered wheelchair. TOGAKUSHI2 uses <strong>dwell-based gaze
       input</strong>: looking at an on-screen button for a short dwell time selects it, so the
       wheelchair can be driven hands-free, without calibration-heavy pointing and without
-      physical switches.
+      physical switches.</span><span class="l-ja">運動障害のために通常のジョイスティックを使えない方には、電動車いすを運転する別の手段が必要です。
+      TOGAKUSHI2は<strong>視線滞留入力</strong>を使います。画面上のボタンを短い滞留時間だけ
+      見つめることで選択でき、ハンズフリーで運転できます。煩雑なキャリブレーション型の
+      ポインティングや、物理スイッチは不要です。</span>
     </p>
-    <h3>System overview</h3>
+    <h3><span class="l-en">System overview</span><span class="l-ja">システム構成</span></h3>
     <table>
-      <tr><th>Gaze input terminal</th>
-          <td>A PC running a graphical interface with large directional buttons. The user selects a
+      <tr><th><span class="l-en">Gaze input terminal</span><span class="l-ja">視線入力端末</span></th>
+          <td><span class="l-en">A PC running a graphical interface with large directional buttons. The user selects a
               button by dwelling their gaze on it; the selected command is sent to the robot side
-              over UDP. (Repository: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>)</td></tr>
-      <tr><th>Robot control</th>
-          <td>A ROS 2 Humble workspace (19 packages) that receives drive commands, manages the
+              over UDP. (Repository: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>)</span><span class="l-ja">大きな方向ボタンを備えたGUIをPCで実行します。ボタンを見つめて滞留すると選択され、
+              選ばれた命令はUDPでロボット側へ送られます。（リポジトリ：<a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>）</span></td></tr>
+      <tr><th><span class="l-en">Robot control</span><span class="l-ja">ロボット制御</span></th>
+          <td><span class="l-en">A ROS 2 Humble workspace (19 packages) that receives drive commands, manages the
               wheelchair state, and generates motion commands.
-              (Repository: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>)</td></tr>
-      <tr><th>Platform</th>
-          <td>WHILL Model CR powered wheelchair.</td></tr>
-      <tr><th>Obstacle detection</th>
-          <td>A 3D LiDAR monitors the surroundings of the wheelchair; detected obstacles are fed
-              back to the interface and used to support safe driving.</td></tr>
-      <tr><th>Path generation</th>
-          <td>Generates a path for passing through doorways without relying on a pre-built map,
-              supporting driving in ordinary school and home environments.</td></tr>
+              (Repository: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>)</span><span class="l-ja">ROS 2 Humbleのワークスペース（19パッケージ）。運転命令の受信、車いすの状態管理、
+              動作命令の生成を行います。
+              （リポジトリ：<a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>）</span></td></tr>
+      <tr><th><span class="l-en">Platform</span><span class="l-ja">プラットフォーム</span></th>
+          <td><span class="l-en">WHILL Model CR powered wheelchair.</span><span class="l-ja">電動車いす WHILL Model CR。</span></td></tr>
+      <tr><th><span class="l-en">Obstacle detection</span><span class="l-ja">障害物検知</span></th>
+          <td><span class="l-en">A 3D LiDAR monitors the surroundings of the wheelchair; detected obstacles are fed
+              back to the interface and used to support safe driving.</span><span class="l-ja">3D LiDARで車いすの周囲を監視し、検知した障害物をインターフェースへ
+              フィードバックして、安全な運転を支援します。</span></td></tr>
+      <tr><th><span class="l-en">Path generation</span><span class="l-ja">経路生成</span></th>
+          <td><span class="l-en">Generates a path for passing through doorways without relying on a pre-built map,
+              supporting driving in ordinary school and home environments.</span><span class="l-ja">事前に作った地図に頼らず、出入り口を通過するための経路を生成します。
+              学校や家庭といった日常環境での走行を支援します。</span></td></tr>
     </table>
     <div class="flow" aria-label="System data flow">
-      <span class="node">Gaze</span><span class="arrow">➜</span>
+      <span class="node"><span class="l-en">Gaze</span><span class="l-ja">視線</span></span><span class="arrow">➜</span>
       <span class="node">GUI PC</span><span class="arrow">➜</span>
       <span class="node">UDP</span><span class="arrow">➜</span>
       <span class="node">ROS 2</span><span class="arrow">➜</span>
       <span class="node">WHILL Model CR</span>
     </div>
-    <h3>Evaluation at a special needs school</h3>
-    <p>
-      The system was evaluated in a real environment: a student at a special needs school used
+    <h3><span class="l-en">Evaluation at a special needs school</span><span class="l-ja">特別支援学校での評価</span></h3>
+    <p><span class="l-en">The system was evaluated in a real environment: a student at a special needs school used
       the wheelchair in training and evaluation sessions held over a period of three months
       (six sessions). The evaluation confirmed that gaze-only driving is feasible in a real
       school environment and provided longitudinal observations on how the user's driving
-      changes with repeated training.
+      changes with repeated training.</span><span class="l-ja">実環境で評価しました。特別支援学校の生徒が、3か月間（全6回）の訓練・評価セッションで
+      車いすを使用しました。実際の学校環境で視線のみの運転が可能であることを確認し、
+      訓練を重ねることで運転がどう変化するかという長期的な観察も得られました。</span>
     </p>
-    <h3>Research keywords</h3>
+    <h3><span class="l-en">Research keywords</span><span class="l-ja">研究キーワード</span></h3>
     <p class="small">
-      Gaze-controlled wheelchair / dwell-based input / assistive technology / obstacle detection /
-      3D LiDAR / ROS 2 / human&ndash;robot interaction / special needs education / real-world evaluation
+      <span class="l-en">Gaze-controlled wheelchair / dwell-based input / assistive technology / obstacle detection /
+      3D LiDAR / ROS 2 / human&ndash;robot interaction / special needs education / real-world evaluation</span><span class="l-ja">視線制御車いす / 滞留入力 / 支援技術 / 障害物検知 /
+      3D LiDAR / ROS 2 / 人間・ロボットインタラクション / 特別支援教育 / 実環境評価</span>
     </p>
   </div>
 </section>
 
 <section id="publications">
-  <h2>Publications &amp; Presentations</h2>
+  <h2><span class="l-en">Publications &amp; Presentations</span><span class="l-ja">業績・発表</span></h2>
 
   <div class="pub">
     <div class="title">Development of a Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection and Its Evaluation at a Special Needs School
-      <span class="badge">Accepted</span></div>
-    <div class="meta">Naofumi Tonegawa, Hiromi Watanabe, Shinji Kotani<br>
+      <span class="badge"><span class="l-en">Accepted</span><span class="l-ja">採択済み</span></span></div>
+    <div class="meta"><span class="l-en">Naofumi Tonegawa, Hiromi Watanabe, Shinji Kotani<br>
       The 2027 IEEE/SICE International Symposium on System Integration (SII 2027),
-      Kobe International Conference Center, Japan, January 11&ndash;14, 2027. Contributed Paper, oral presentation.</div>
+      Kobe International Conference Center, Japan, January 11&ndash;14, 2027. Contributed Paper, oral presentation.</span><span class="l-ja">舍川尚史、渡辺裕美、小谷信司<br>
+      The 2027 IEEE/SICE International Symposium on System Integration (SII 2027)、
+      神戸国際会議場、2027年1月11日〜14日。Contributed Paper、口頭発表。</span></div>
   </div>
 
   <div class="pub">
     <div class="title">地図を用いない視線入力式電動車いすの出入り口通過の経路生成
       <span class="badge blue">IS2-16</span></div>
-    <div class="meta">舍川尚史<br>
-      ViEW2026 ビジョン技術の実利用ワークショップ, パシフィコ横浜, December 3&ndash;4, 2026.
-      インタラクティブセッション2 (December 3, 14:40&ndash;15:50), ポスター発表.</div>
+    <div class="meta"><span class="l-en">Naofumi Tonegawa<br>
+      ViEW2026 Vision Engineering Workshop, Pacifico Yokohama, December 3&ndash;4, 2026.
+      Interactive Session 2 (December 3, 14:40&ndash;15:50), poster presentation.</span><span class="l-ja">舍川尚史<br>
+      ViEW2026 ビジョン技術の実利用ワークショップ、パシフィコ横浜、2026年12月3日〜4日。
+      インタラクティブセッション2（12月3日 14:40〜15:50）、ポスター発表。</span></div>
   </div>
 
   <div class="pub">
     <div class="title">視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価</div>
-    <div class="meta">Master's thesis, University of Yamanashi (to be presented in February 2027).</div>
+    <div class="meta"><span class="l-en">Master's thesis, University of Yamanashi (to be presented in February 2027).</span><span class="l-ja">修士論文、山梨大学（2027年2月に発表予定）。</span></div>
   </div>
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2><span class="l-en">Projects</span><span class="l-ja">プロジェクト</span></h2>
   <div class="grid">
     <div class="card">
       <h3><a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></h3>
-      <p>ROS 2 Humble workspace for the gaze-controlled WHILL Model CR wheelchair.
+      <p><span class="l-en">ROS 2 Humble workspace for the gaze-controlled WHILL Model CR wheelchair.
          19 packages covering command reception over UDP, state management, joystick command
-         generation, and integration with the WHILL platform.</p>
+         generation, and integration with the WHILL platform.</span><span class="l-ja">視線制御WHILL Model CRのためのROS 2 Humbleワークスペース。
+         UDPでの命令受信、状態管理、ジョイスティック命令の生成、WHILLプラットフォームとの
+         統合を担う19パッケージ。</span></p>
       <p class="small">ROS 2 Humble / Python / UDP / WHILL Model CR</p>
     </div>
     <div class="card">
       <h3><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></h3>
-      <p>Graphical user interface running on the gaze-input PC. Large directional buttons are
+      <p><span class="l-en">Graphical user interface running on the gaze-input PC. Large directional buttons are
          selected by gaze dwelling; the interface also displays obstacle information received
-         from the robot side.</p>
+         from the robot side.</span><span class="l-ja">視線入力PCで動くグラフィカルインターフェース。大きな方向ボタンを視線の滞留で
+         選択し、ロボット側から受け取った障害物情報も表示します。</span></p>
       <p class="small">Python / GUI / gaze interaction</p>
     </div>
   </div>
 </section>
 
 <section id="skills">
-  <h2>Skills &amp; Tools</h2>
+  <h2><span class="l-en">Skills &amp; Tools</span><span class="l-ja">スキル・使用技術</span></h2>
   <table>
-    <tr><th>Robotics</th><td>ROS 2 (Humble), powered wheelchair control (WHILL Model CR), 3D LiDAR obstacle detection, state management and safety design</td></tr>
-    <tr><th>Programming</th><td>Python (robot control nodes, GUI applications), UDP network communication</td></tr>
-    <tr><th>Interaction</th><td>Gaze tracking and dwell-based selection, interface design for users with motor disabilities</td></tr>
-    <tr><th>Development</th><td>Git / GitHub, Ubuntu / Linux, LaTeX</td></tr>
-    <tr><th>Field work</th><td>Designing and running user evaluations at a special needs school, longitudinal training sessions</td></tr>
+    <tr><th><span class="l-en">Robotics</span><span class="l-ja">ロボティクス</span></th><td><span class="l-en">ROS 2 (Humble), powered wheelchair control (WHILL Model CR), 3D LiDAR obstacle detection, state management and safety design</span><span class="l-ja">ROS 2 (Humble)、電動車いす制御（WHILL Model CR）、3D LiDAR障害物検知、状態管理と安全設計</span></td></tr>
+    <tr><th><span class="l-en">Programming</span><span class="l-ja">プログラミング</span></th><td><span class="l-en">Python (robot control nodes, GUI applications), UDP network communication</span><span class="l-ja">Python（ロボット制御ノード、GUIアプリケーション）、UDPネットワーク通信</span></td></tr>
+    <tr><th><span class="l-en">Interaction</span><span class="l-ja">インタラクション</span></th><td><span class="l-en">Gaze tracking and dwell-based selection, interface design for users with motor disabilities</span><span class="l-ja">視線計測と滞留選択、運動障害のあるユーザー向けのインターフェース設計</span></td></tr>
+    <tr><th><span class="l-en">Development</span><span class="l-ja">開発環境</span></th><td><span class="l-en">Git / GitHub, Ubuntu / Linux, LaTeX</span><span class="l-ja">Git / GitHub、Ubuntu / Linux、LaTeX</span></td></tr>
+    <tr><th><span class="l-en">Field work</span><span class="l-ja">フィールドワーク</span></th><td><span class="l-en">Designing and running user evaluations at a special needs school, longitudinal training sessions</span><span class="l-ja">特別支援学校でのユーザー評価の設計と実施、長期の訓練セッション</span></td></tr>
   </table>
 </section>
 
 <section id="career">
-  <h2>Education &amp; Career</h2>
+  <h2><span class="l-en">Education &amp; Career</span><span class="l-ja">学歴・職歴</span></h2>
   <table>
-    <tr><th>Apr 2027 &ndash;</th><td>Seiko Epson Corporation (scheduled to join).</td></tr>
-    <tr><th>Apr 2025 &ndash; Mar 2027</th><td>M.S. in Engineering (expected), Course of Mechatronics, Graduate School of Engineering, University of Yamanashi. Kotani&ndash;Watanabe Laboratory.</td></tr>
-    <tr><th>Apr 2021 &ndash; Mar 2025</th><td>B.Eng., Department of Mechatronics, Faculty of Engineering, University of Yamanashi.</td></tr>
-    <tr><th>&ndash; Mar 2021</th><td>Nagano Prefectural Yashiro High School, Nagano, Japan.</td></tr>
+    <tr><th>Apr 2027 &ndash;</th><td><span class="l-en">Seiko Epson Corporation (scheduled to join).</span><span class="l-ja">セイコーエプソン株式会社（入社予定）。</span></td></tr>
+    <tr><th>Apr 2025 &ndash; Mar 2027</th><td><span class="l-en">M.S. in Engineering (expected), Course of Mechatronics, Graduate School of Engineering, University of Yamanashi. Kotani&ndash;Watanabe Laboratory.</span><span class="l-ja">山梨大学大学院 工学専攻 メカトロニクスコース、修士（工学）取得見込み。小谷・渡辺研究室。</span></td></tr>
+    <tr><th>Apr 2021 &ndash; Mar 2025</th><td><span class="l-en">B.Eng., Department of Mechatronics, Faculty of Engineering, University of Yamanashi.</span><span class="l-ja">山梨大学 工学部 メカトロニクス工学科、学士（工学）。</span></td></tr>
+    <tr><th>&ndash; Mar 2021</th><td><span class="l-en">Nagano Prefectural Yashiro High School, Nagano, Japan.</span><span class="l-ja">長野県立屋代高等学校（長野県）。</span></td></tr>
   </table>
 </section>
 
 <section id="news">
-  <h2>News</h2>
+  <h2><span class="l-en">News</span><span class="l-ja">ニュース</span></h2>
   <ul class="timeline">
-    <li><span class="when">Jan 2027</span> — Oral presentation at SII 2027 in Kobe, Japan.</li>
-    <li><span class="when">Dec 2026</span> — Poster presentation (IS2-16) at ViEW2026 in Yokohama, Japan.</li>
-    <li><span class="when">Oct 2026</span> — Our paper on the gaze-controlled wheelchair was accepted to SII 2027 as a Contributed Paper.</li>
-    <li><span class="when">Nov 2026</span> — This homepage was published on GitHub Pages.</li>
+    <li><span class="when">Jan 2027</span> — <span class="l-en">Oral presentation at SII 2027 in Kobe, Japan.</span><span class="l-ja">SII 2027（神戸）で口頭発表。</span></li>
+    <li><span class="when">Dec 2026</span> — <span class="l-en">Poster presentation (IS2-16) at ViEW2026 in Yokohama, Japan.</span><span class="l-ja">ViEW2026（横浜）でポスター発表（IS2-16）。</span></li>
+    <li><span class="when">Oct 2026</span> — <span class="l-en">Our paper on the gaze-controlled wheelchair was accepted to SII 2027 as a Contributed Paper.</span><span class="l-ja">視線制御車いすの論文が、SII 2027にContributed Paperとして採択されました。</span></li>
+    <li><span class="when">Nov 2026</span> — <span class="l-en">This homepage was published on GitHub Pages.</span><span class="l-ja">このホームページをGitHub Pagesで公開しました。</span></li>
   </ul>
 </section>
 
 <section id="schedule">
-  <h2>Schedule</h2>
-  <p>Public talks, presentations, and events. (Times in JST.)</p>
+  <h2><span class="l-en">Schedule</span><span class="l-ja">予定</span></h2>
+  <p><span class="l-en">Public talks, presentations, and events. (Times in JST.)</span><span class="l-ja">公開してよい講演・発表・行事を載せています。（時刻は日本時間）</span></p>
   <div class="cal-wrap">
     <iframe src="https://calendar.google.com/calendar/embed?src=7aa6dac006a10469cfd571efb7c752d720950b82126288ac901f3972909d0460%40group.calendar.google.com&amp;ctz=Asia%2FTokyo" title="Public Schedule" loading="lazy"></iframe>
   </div>
 </section>
 
 <section id="blog">
-  <h2>Blog</h2>
-  <p>研究の進捗や学会参加の記録はブログに書いています。→ <a href="blog.html">Blog を読む</a></p>
+  <h2><span class="l-en">Blog</span><span class="l-ja">ブログ</span></h2>
+  <p><span class="l-en">Notes on research progress and conference participation are on the blog. → <a href="blog.html">Read the Blog</a></span><span class="l-ja">研究の進捗や学会参加の記録はブログに書いています。→ <a href="blog.html">Blog を読む</a></span></p>
   <ul>
-    <li>2026-11-12 — <a href="blog.html#marugen-ramen">研究室メンバーと丸源ラーメンへ</a></li>
-    <li>2026-11-10 — <a href="blog.html#view2026-program">ViEW2026のプログラムが公開されました</a></li>
-    <li>2026-11-10 — <a href="blog.html#homepage">ホームページを公開しました</a></li>
-    <li>2026-10-31 — <a href="blog.html#sii2027-accepted">SII 2027に論文が採択されました</a></li>
+    <li>2026-11-12 — <a href="blog.html#marugen-ramen"><span class="l-en">Marugen Ramen with Lab Members</span><span class="l-ja">研究室メンバーと丸源ラーメンへ</span></a></li>
+    <li>2026-11-10 — <a href="blog.html#view2026-program"><span class="l-en">ViEW2026 Program Announced</span><span class="l-ja">ViEW2026のプログラムが公開されました</span></a></li>
+    <li>2026-11-10 — <a href="blog.html#homepage"><span class="l-en">Homepage Published</span><span class="l-ja">ホームページを公開しました</span></a></li>
+    <li>2026-10-31 — <a href="blog.html#sii2027-accepted"><span class="l-en">Paper Accepted to SII 2027</span><span class="l-ja">SII 2027に論文が採択されました</span></a></li>
   </ul>
 </section>
 
 <section id="explosion">
-  <h2>Explosion</h2>
+  <h2><span class="l-en">Explosion</span><span class="l-ja">爆裂</span></h2>
   <div class="explosion-panel">
-    <p>My assistant Mugi is an arch wizard devoted to one spell only: Explosion, the ultimate attack magic. She can cast it just once before running out of mana — go ahead, try it.</p>
+    <p><span class="l-en">My assistant Mugi is an arch wizard devoted to one spell only: Explosion, the ultimate attack magic. She can cast it just once before running out of mana — go ahead, try it.</span><span class="l-ja">助手のむぎは、爆裂魔法ひとつにすべてを懸けるアークウィザードです。最強の攻撃魔法ですが、魔力切れになるまで一発だけ。どうぞ、押してみてください。</span></p>
     <div class="boom-wrap">
-      <button id="boomBtn" type="button">🔥 爆裂魔法を放つ</button>
+      <button id="boomBtn" type="button"><span class="l-en">🔥 Cast Explosion</span><span class="l-ja">🔥 爆裂魔法を放つ</span></button>
       <div id="chant"></div>
       <div id="boomCount"></div>
     </div>
@@ -330,11 +355,11 @@
 </section>
 
 <section id="links">
-  <h2>Links</h2>
+  <h2><span class="l-en">Links</span><span class="l-ja">リンク</span></h2>
   <ul>
     <li>GitHub: <a href="https://github.com/shiba0627">github.com/shiba0627</a></li>
     <li>ROS 2 workspace: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></li>
-    <li>Gaze-input GUI: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></li>
+    <li><span class="l-en">Gaze-input GUI: </span><span class="l-ja">視線入力GUI：</span><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></li>
     <li>SII 2027: <a href="https://sii2027.sice-si.org/">sii2027.sice-si.org</a></li>
   </ul>
 </section>
@@ -349,16 +374,35 @@
 
 <div id="flash"></div>
 <script>
+  // ===== 言語切替 (EN / JA) =====
+  (function(){
+    var KEY = 'mugi-lang';
+    var btn = document.getElementById('langBtn');
+    function cur(){ return document.documentElement.dataset.lang === 'ja' ? 'ja' : 'en'; }
+    function syncBtn(){ if (btn) btn.textContent = cur() === 'ja' ? 'English' : '日本語'; }
+    function apply(l){
+      document.documentElement.dataset.lang = l;
+      document.documentElement.setAttribute('lang', l);
+      try { localStorage.setItem(KEY, l); } catch(e) {}
+      syncBtn();
+      if (window.__onLang) window.__onLang(l);
+    }
+    syncBtn();
+    if (btn) btn.addEventListener('click', function(){ apply(cur() === 'ja' ? 'en' : 'ja'); });
+  })();
+</script>
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // ===== タイピング演出（ヒーローの一文） =====
   (function(){
     const tag = document.querySelector('.hero .tagline');
     if (!tag) return;
-    const full = tag.textContent; tag.textContent = '';
+    const span = tag.querySelector(document.documentElement.dataset.lang === 'ja' ? '.l-ja' : '.l-en') || tag;
+    const full = span.textContent; span.textContent = '';
     let i = 0;
     const t = setInterval(function(){
-      tag.textContent = full.slice(0, ++i);
+      span.textContent = full.slice(0, ++i);
       if (i >= full.length) clearInterval(t);
     }, 34);
   })();
@@ -383,17 +427,24 @@
       'この一撃にすべてを込める。いくぞ、エクスプロージョン！',
       '紅魔の誇りにかけて、今日一番の爆裂を放たん！'
     ];
+    const chantsEn = [
+      'Crimson power, gather to a single point. Explosion!',
+      'My name is Mugi, arch wizard and wielder of Explosion, the ultimate attack magic!',
+      'I put everything into this one strike. Here goes — Explosion!',
+      'By the pride of the Crimson Demons, I unleash today\'s greatest Explosion!'
+    ];
     const btn = document.getElementById('boomBtn');
     const chantEl = document.getElementById('chant');
     const countEl = document.getElementById('boomCount');
     const flash = document.getElementById('flash');
     if (!btn) return;
+    const labelHTML = btn.innerHTML;
     let count = 0;
     try {
       const saved = JSON.parse(localStorage.getItem('mugi-boom') || '{}');
       if (saved.date === new Date().toDateString()) count = saved.count || 0;
     } catch(e) {}
-    function renderCount(){ countEl.textContent = count > 0 ? ('本日の爆裂：' + count + ' 回') : ''; }
+    function renderCount(){ const ja = document.documentElement.dataset.lang === 'ja'; countEl.textContent = count > 0 ? (ja ? ('本日の爆裂：' + count + ' 回') : ('Explosions today: ' + count)) : ''; }
     function saveCount(){
       try { localStorage.setItem('mugi-boom', JSON.stringify({date: new Date().toDateString(), count: count})); } catch(e) {}
     }
@@ -438,7 +489,8 @@
       void document.body.offsetWidth;
       document.body.classList.add('shake');
       // 詠唱（タイピング表示）
-      const line = chants[Math.floor(Math.random() * chants.length)];
+      const pool = document.documentElement.dataset.lang === 'ja' ? chants : chantsEn;
+      const line = pool[Math.floor(Math.random() * pool.length)];
       chantEl.textContent = '';
       let i = 0;
       const t = setInterval(function(){
@@ -447,10 +499,10 @@
       }, 28);
       // 一発放つと魔力切れ
       btn.disabled = true;
-      const orig = btn.textContent;
-      btn.textContent = '魔力切れ……回復中';
-      setTimeout(function(){ btn.disabled = false; btn.textContent = orig; }, 3000);
+      btn.textContent = document.documentElement.dataset.lang === 'ja' ? '魔力切れ……回復中' : 'Out of mana... recharging';
+      setTimeout(function(){ btn.disabled = false; btn.innerHTML = labelHTML; }, 3000);
     });
+    window.__onLang = function(){ renderCount(); if (!btn.disabled) btn.innerHTML = labelHTML; };
   })();
 </script>
 </body>
