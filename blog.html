@@ -8,51 +8,64 @@
 <meta name="description" content="Blog of Naofumi Tonegawa — notes on gaze-controlled assistive robotics research, conferences, and daily progress.">
 <style>
   :root{
-    --ink:#1c2430; --sub:#5a6572; --line:#dfe5ec; --bg:#f7f9fb;
-    --accent:#1f6fa8; --accent2:#b3392e; --card:#ffffff;
+    --ink:#16202c; --sub:#5b6a78; --line:#e2e9f0; --bg:#f5f8fb;
+    --navy:#0d2036; --accent:#1f6fa8; --accent2:#c0392b; --card:#ffffff; --soft:#eaf2f8;
+    --shadow:0 6px 24px rgba(13,32,54,.08);
+    --shadow-lg:0 16px 40px rgba(13,32,54,.16);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
   body{font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-       color:var(--ink); background:var(--bg); line-height:1.75;}
+       color:var(--ink); background:var(--bg); line-height:1.75; -webkit-font-smoothing:antialiased;}
   a{color:var(--accent); text-decoration:none;}
   a:hover{text-decoration:underline;}
-  header.hero{background:linear-gradient(135deg,#14324a 0%,#1f6fa8 70%,#2b86c4 100%);
-    color:#fff; padding:40px 20px 32px;}
-  .wrap{max-width:920px; margin:0 auto; padding:0 20px;}
-  .hero h1{font-size:2rem;}
-  .hero .sub{margin-top:6px; opacity:.9;}
-  nav.toc{background:rgba(255,255,255,.95); border-bottom:1px solid var(--line);}
-  nav.toc .wrap{display:flex; flex-wrap:wrap; gap:4px 18px; padding-top:10px; padding-bottom:10px;}
-  nav.toc a{color:var(--ink); font-size:.92rem; font-weight:600;}
-  main{padding:26px 0 30px;}
-  article.post{background:var(--card); border:1px solid var(--line); border-radius:10px;
-    padding:20px 22px; margin-bottom:18px;}
-  article.post .date{color:var(--accent2); font-weight:700; font-size:.9rem;}
-  article.post h2{font-size:1.3rem; margin:4px 0 8px; color:#14324a;}
-  article.post p{margin-bottom:8px;}
-  article.post img{width:100%; height:auto; border-radius:8px; margin:8px 0;}
-  .tag{display:inline-block; background:#eef4f9; border:1px solid var(--line); color:#14324a;
-    border-radius:999px; padding:0 10px; font-size:.78rem; margin-right:6px;}
-  footer{border-top:1px solid var(--line); padding:22px 0 40px; color:var(--sub); font-size:.9rem;}
-  /* ===== motion ===== */
+  .wrap{max-width:1020px; margin:0 auto; padding:0 22px;}
   @keyframes gradShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-  header.hero{background-size:180% 180%; animation:gradShift 14s ease infinite;}
-  @keyframes riseIn{from{opacity:0; transform:translateY(18px)}to{opacity:1; transform:translateY(0)}}
-  .hero h1,.hero .sub{animation:riseIn .8s ease both;}
-  .hero .sub{animation-delay:.12s}
-  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  @keyframes riseIn{from{opacity:0; transform:translateY(22px)}to{opacity:1; transform:translateY(0)}}
+  header.hero{position:relative; overflow:hidden; color:#fff;
+    background:linear-gradient(120deg,#0a1a2c 0%,#12395c 45%,#1f6fa8 80%,#2f8fc9 100%);
+    background-size:200% 200%; animation:gradShift 16s ease infinite;
+    padding:56px 20px 44px;}
+  header.hero::before{content:""; position:absolute; inset:0;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:44px 44px;
+    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,#000 30%,transparent 75%);
+            mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,#000 30%,transparent 75%);}
+  .hero .wrap{position:relative; z-index:1;}
+  .hero .kicker{font-size:.8rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+    color:#9fd0f2; animation:riseIn .8s ease both;}
+  .hero h1{font-size:2.4rem; margin-top:8px; animation:riseIn .8s .08s ease both;}
+  .hero .sub{margin-top:8px; opacity:.92; animation:riseIn .8s .16s ease both;}
+  nav.toc{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.88); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);}
+  nav.toc .wrap{display:flex; flex-wrap:wrap; align-items:center; gap:2px 4px; padding-top:8px; padding-bottom:8px;}
+  nav.toc a{color:var(--sub); font-size:.9rem; font-weight:600; padding:4px 10px; border-radius:999px;
+    transition:color .2s ease, background .2s ease;}
+  nav.toc a:hover{color:var(--navy); text-decoration:none; background:var(--soft);}
+  nav.toc button{margin-left:auto; background:#fff; border:1px solid var(--line); border-radius:999px;
+    padding:4px 14px; font-size:.85rem; font-weight:700; cursor:pointer; color:var(--ink); font-family:inherit;}
+  main{padding:34px 0 30px;}
+  article.post{background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:24px 26px; margin-bottom:20px; box-shadow:var(--shadow);
+    transition:transform .25s ease, box-shadow .25s ease;}
+  article.post:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg);}
+  article.post .date{color:var(--accent2); font-weight:700; font-size:.9rem; letter-spacing:.06em;}
+  article.post h2{font-size:1.35rem; margin:4px 0 10px; color:var(--navy);}
+  article.post p{margin-bottom:10px;}
+  article.post img{width:100%; height:auto; border-radius:10px; margin:10px 0;}
+  .tag{display:inline-block; background:var(--soft); border:1px solid #cfdfec; color:var(--navy);
+    border-radius:999px; padding:1px 12px; font-size:.78rem; font-weight:600; margin-right:6px;}
+  footer{border-top:1px solid var(--line); padding:26px 0 44px; color:var(--sub); font-size:.9rem;}
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
   .reveal.in{opacity:1; transform:none;}
-  article.post{transition:transform .25s ease, box-shadow .25s ease;}
-  article.post:hover{transform:translateY(-3px); box-shadow:0 10px 24px rgba(20,50,74,.12);}
-  /* language toggle */
   .l-ja{display:none;}
   html[data-lang="ja"] .l-ja{display:inline;}
   html[data-lang="ja"] .l-en{display:none;}
-  nav.toc button{margin-left:auto; background:#fff; border:1px solid var(--line); border-radius:999px;
-    padding:2px 12px; font-size:.85rem; font-weight:700; cursor:pointer; color:var(--ink); font-family:inherit;}
   @media (prefers-reduced-motion: reduce){
     *{animation:none !important; transition:none !important;}
     .reveal{opacity:1; transform:none;}
+    html{scroll-behavior:auto;}
   }
 </style>
 </head>
@@ -60,6 +73,7 @@
 
 <header class="hero">
   <div class="wrap">
+    <div class="kicker">Notes &amp; Updates</div>
     <h1><span class="l-en">Blog</span><span class="l-ja">ブログ</span></h1>
     <div class="sub"><span class="l-en">Naofumi Tonegawa — research notes, conference reports, and small updates.</span><span class="l-ja">舍川尚史 — 研究ノート、学会レポート、小さな近況。</span></div>
   </div>
