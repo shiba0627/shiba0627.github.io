@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — Naofumi Tonegawa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
 <script>try{document.documentElement.dataset.lang=(localStorage.getItem('mugi-lang')==='ja')?'ja':'en';}catch(e){document.documentElement.dataset.lang='en';}</script>
 <meta name="description" content="Blog of Naofumi Tonegawa — notes on gaze-controlled assistive robotics research, conferences, and daily progress.">
 <style>
   :root{
     --ink:#16202c; --sub:#5b6a78; --line:#e2e9f0; --bg:#f5f8fb;
-    --navy:#0d2036; --accent:#1f6fa8; --accent2:#c0392b; --card:#ffffff; --soft:#eaf2f8;
-    --shadow:0 6px 24px rgba(13,32,54,.08);
-    --shadow-lg:0 16px 40px rgba(13,32,54,.16);
+    --navy:#0d2036; --accent:#1f6fa8; --accent2:#0d3b66; --card:#ffffff; --soft:#eaf2f8;
+    --shadow:none;
+    --shadow-lg:none;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
-  body{font-family:"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  body{font-family:"Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
        color:var(--ink); background:var(--bg); line-height:1.75; -webkit-font-smoothing:antialiased;}
   a{color:var(--accent); text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -23,17 +26,10 @@
   @keyframes gradShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
   @keyframes riseIn{from{opacity:0; transform:translateY(22px)}to{opacity:1; transform:translateY(0)}}
   header.hero{position:relative; overflow:hidden; color:#fff;
-    background:linear-gradient(120deg,#0a1a2c 0%,#12395c 45%,#1f6fa8 80%,#2f8fc9 100%);
-    background-size:200% 200%; animation:gradShift 16s ease infinite;
-    padding:56px 20px 44px;}
-  header.hero::before{content:""; position:absolute; inset:0;
-    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
-                     linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
-    background-size:44px 44px;
-    -webkit-mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,#000 30%,transparent 75%);
-            mask-image:radial-gradient(ellipse 90% 80% at 50% 20%,#000 30%,transparent 75%);}
-  .hero .wrap{position:relative; z-index:1;}
-  .hero .kicker{font-size:.8rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+    background:#0b2440;
+    padding:70px 20px 44px;}
+  header.hero::before{display:none;}
+  .hero .kicker{font-family:"IBM Plex Mono", monospace; font-size:.8rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
     color:#9fd0f2; animation:riseIn .8s ease both;}
   .hero h1{font-size:2.4rem; margin-top:8px; animation:riseIn .8s .08s ease both;}
   .hero .sub{margin-top:8px; opacity:.92; animation:riseIn .8s .16s ease both;}
@@ -45,15 +41,17 @@
   nav.toc a:hover{color:var(--navy); text-decoration:none; background:var(--soft);}
   nav.toc button{margin-left:auto; background:#fff; border:1px solid var(--line); border-radius:999px;
     padding:4px 14px; font-size:.85rem; font-weight:700; cursor:pointer; color:var(--ink); font-family:inherit;}
-  main{padding:34px 0 30px;}
-  article.post{background:var(--card); border:1px solid var(--line); border-radius:16px;
+  main{padding:52px 0 30px;}
+  article.post:nth-of-type(even){margin-bottom:36px;}
+  article.post:nth-of-type(odd){margin-bottom:14px;}
+  article.post{background:var(--card); border:1px solid var(--line); border-radius:4px;
     padding:24px 26px; margin-bottom:20px; box-shadow:var(--shadow);
     transition:transform .25s ease, box-shadow .25s ease;}
-  article.post:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg);}
-  article.post .date{color:var(--accent2); font-weight:700; font-size:.9rem; letter-spacing:.06em;}
+  article.post:hover{border-color:#b9d2e6;}
+  article.post .date{font-family:"IBM Plex Mono", monospace; color:var(--accent2); font-weight:700; font-size:.9rem; letter-spacing:.06em;}
   article.post h2{font-size:1.35rem; margin:4px 0 10px; color:var(--navy);}
   article.post p{margin-bottom:10px;}
-  article.post img{width:100%; height:auto; border-radius:10px; margin:10px 0;}
+  article.post img{width:100%; height:auto; border-radius:4px; margin:10px 0;}
   .tag{display:inline-block; background:var(--soft); border:1px solid #cfdfec; color:var(--navy);
     border-radius:999px; padding:1px 12px; font-size:.78rem; font-weight:600; margin-right:6px;}
   footer{border-top:1px solid var(--line); padding:26px 0 44px; color:var(--sub); font-size:.9rem;}
