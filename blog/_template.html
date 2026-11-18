@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  新しい記事の作り方:
+  1. このファイルをコピーして blog/<好きなid>.html という名前にする（例: blog/lab-trip.html）
+  2. 下の ★ の部分（title / description / 日付 / 見出し / 本文 / カテゴリ）を書き換える
+  3. blog.html の記事一覧の先頭に、1行（<a class="entry" ...>）を足す
+  4. sitemap.xml に URL を足す
+  タイトル・本文は <span class="l-en">English</span><span class="l-ja">日本語</span> の2言語セットで書きます。
+  カテゴリは conference / life / site のどれか（blog.html の data-cat と ?cat= に使います）。
+  画像は blog/img/ に置き、<img src="img/ファイル名"> で読み込みます。
+-->
+<title>★ English title — Naofumi Tonegawa</title>
+<meta name="description" content="★ 1〜2文の説明">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+<script>try{document.documentElement.dataset.lang=(localStorage.getItem('mugi-lang')==='ja')?'ja':'en';}catch(e){document.documentElement.dataset.lang='en';}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="../blog.html"><span class="l-en">← Blog</span><span class="l-ja">← ブログ</span></a>
+    <a href="../index.html"><span class="l-en">Home</span><span class="l-ja">ホーム</span></a>
+    <button id="langBtn" type="button">日本語</button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <article class="post">
+    <div class="date">★ 2026-01-01</div>
+    <h1><span class="l-en">★ Title</span><span class="l-ja">★ タイトル</span></h1>
+    <p><span class="l-en">★ Body.</span><span class="l-ja">★ 本文。</span></p>
+    <p><a class="tag" href="../blog.html?cat=life"><span class="l-en">Life</span><span class="l-ja">日常</span></a></p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Naofumi Tonegawa. <a href="../index.html"><span class="l-en">Back to Home</span><span class="l-ja">ホームへ戻る</span></a>
+    <div style="margin-top:6px;"><span class="l-en">Visitors:</span><span class="l-ja">来訪者：</span> <span id="busuanzi_value_site_uv">-</span> · <span class="l-en">Visits:</span><span class="l-ja">訪問数：</span> <span id="busuanzi_value_site_pv">-</span></div>
+  </div>
+</footer>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="blog.js"></script>
+</body>
+</html>

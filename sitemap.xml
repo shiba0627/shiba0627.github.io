@@ -18,4 +18,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://shiba0627.github.io/blog/marugen-ramen.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shiba0627.github.io/blog/view2026-program.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shiba0627.github.io/blog/homepage.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shiba0627.github.io/blog/sii2027-accepted.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

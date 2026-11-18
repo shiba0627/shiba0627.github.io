@@ -1,0 +1,75 @@
+/* Shared styles for blog.html and blog/*.html */
+:root{
+  --ink:#16202c; --sub:#5b6a78; --line:#e2e9f0; --bg:#f5f8fb;
+  --navy:#0d2036; --accent:#1f6fa8; --accent2:#0d3b66; --card:#ffffff; --soft:#eaf2f8;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:"Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+     color:var(--ink); background:var(--bg); line-height:1.75; -webkit-font-smoothing:antialiased;}
+a{color:var(--accent); text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:860px; margin:0 auto; padding:0 22px;}
+@keyframes riseIn{from{opacity:0; transform:translateY(22px)}to{opacity:1; transform:translateY(0)}}
+
+/* hero (list page) */
+header.hero{color:#fff; background:#0b2440; padding:44px 20px 28px;}
+.hero .kicker{font-family:"IBM Plex Mono", monospace; font-size:.8rem; font-weight:700; letter-spacing:.28em; text-transform:uppercase;
+  color:#9fd0f2; animation:riseIn .8s ease both;}
+.hero h1{font-size:2rem; margin-top:6px; animation:riseIn .8s .08s ease both;}
+.hero .sub{margin-top:8px; opacity:.92; animation:riseIn .8s .16s ease both;}
+
+/* nav */
+nav.toc{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.88); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);}
+nav.toc .wrap{display:flex; flex-wrap:wrap; align-items:center; gap:2px 4px; padding-top:8px; padding-bottom:8px;}
+nav.toc a{color:var(--sub); font-size:.9rem; font-weight:600; padding:4px 10px; border-radius:999px;
+  transition:color .2s ease, background .2s ease;}
+nav.toc a:hover{color:var(--navy); text-decoration:none; background:var(--soft);}
+nav.toc button{margin-left:auto; background:#fff; border:1px solid var(--line); border-radius:999px;
+  padding:4px 14px; font-size:.85rem; font-weight:700; cursor:pointer; color:var(--ink); font-family:inherit;}
+main{padding:28px 0 30px;}
+
+/* list page */
+.filters{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px;}
+.filters button{background:#fff; border:1px solid var(--line); border-radius:999px; padding:4px 14px;
+  font-size:.85rem; font-weight:700; cursor:pointer; color:var(--sub); font-family:inherit;}
+.filters button:hover{border-color:var(--accent); color:var(--navy);}
+.filters button.on{background:var(--accent); border-color:var(--accent); color:#fff;}
+.year{font-family:"IBM Plex Mono", monospace; font-weight:700; color:var(--accent2); font-size:1.1rem;
+  margin:26px 0 0; padding-bottom:6px; border-bottom:2px solid var(--navy);}
+.entry{display:grid; grid-template-columns:110px 1fr auto; column-gap:22px; align-items:baseline;
+  padding:15px 0; border-bottom:1px solid var(--line); color:var(--ink);}
+.entry:hover{text-decoration:none;}
+.entry:hover .etitle{color:var(--accent);}
+.entry .date{font-family:"IBM Plex Mono", monospace; color:var(--accent2); font-weight:700; font-size:.88rem; letter-spacing:.04em;}
+.entry .etitle{font-weight:700; color:var(--navy); transition:color .2s ease;}
+.empty{color:var(--sub); padding:20px 0; display:none;}
+
+/* post page */
+.post .date{font-family:"IBM Plex Mono", monospace; color:var(--accent2); font-weight:700; font-size:.9rem; letter-spacing:.06em;}
+.post h1{font-size:1.7rem; line-height:1.4; margin:4px 0 18px; color:var(--navy);}
+.post p{margin-bottom:12px;}
+.post img{width:100%; height:auto; border-radius:4px; margin:10px 0;}
+.pager{display:flex; justify-content:space-between; gap:16px; margin-top:34px; padding-top:16px; border-top:1px solid var(--line); font-size:.92rem;}
+.pager a{display:block; max-width:48%;}
+.pager .next{margin-left:auto; text-align:right;}
+.pager small{display:block; color:var(--sub); font-size:.78rem;}
+.back{margin-top:22px; font-size:.92rem;}
+
+.tag{display:inline-block; background:var(--soft); border:1px solid #cfdfec; color:var(--navy);
+  border-radius:999px; padding:1px 12px; font-size:.78rem; font-weight:600; margin-right:6px;}
+a.tag:hover{background:#dbeaf6; text-decoration:none;}
+
+footer{border-top:1px solid var(--line); padding:26px 0 44px; color:var(--sub); font-size:.9rem;}
+.l-ja{display:none;}
+html[data-lang="ja"] .l-ja{display:inline;}
+html[data-lang="ja"] .l-en{display:none;}
+@media (max-width:640px){
+  .entry{grid-template-columns:1fr auto; row-gap:0;}
+  .entry .date{grid-column:1 / -1;}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important;}
+  html{scroll-behavior:auto;}
+}

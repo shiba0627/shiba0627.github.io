@@ -9,7 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
 <script>try{document.documentElement.dataset.lang=(localStorage.getItem('mugi-lang')==='ja')?'ja':'en';}catch(e){document.documentElement.dataset.lang='en';}</script>
-<meta name="description" content="Naofumi Tonegawa (舍川尚史) — Master's student at the University of Yamanashi working on dwell-based gaze-controlled powered wheelchairs with obstacle detection, evaluated at a special needs school.">
+<meta name="description" content="舍川尚史のホームページ。山梨大学大学院で、視線で操作する電動車いすを研究しています。 Naofumi Tonegawa's homepage — gaze-controlled powered wheelchairs.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"舍川尚史のホームページ","alternateName":["Naofumi Tonegawa","舍川尚史"],"url":"https://shiba0627.github.io/"}</script>
 <style>
   :root{
     --ink:#16202c; --sub:#5b6a78; --line:#e2e9f0; --bg:#f5f8fb;
@@ -84,7 +85,7 @@
   section{padding:44px 0 10px; scroll-margin-top:64px;}
   #about{padding-top:88px;} #research{padding-top:28px;} #publications{padding-top:76px;}
   #projects{padding-top:24px;} #skills{padding-top:64px;} #career{padding-top:20px;}
-  #news{padding-top:58px;} #schedule{padding-top:24px;} #blog{padding-top:70px;}
+  #schedule{padding-top:24px;} #blog{padding-top:70px;}
   #links{padding-top:16px; padding-bottom:36px;}
   .eyebrow{font-family:"IBM Plex Mono", monospace; font-size:.78rem; font-weight:800; letter-spacing:.24em; text-transform:uppercase; color:var(--accent);}
   h2{font-size:1.85rem; line-height:1.3; margin:4px 0 18px; color:var(--navy);}
@@ -246,14 +247,6 @@
     <div class="affil"><span class="l-en">Kotani&ndash;Watanabe Laboratory, Course of Mechatronics,<br>
       Graduate School of Engineering, University of Yamanashi, Japan</span><span class="l-ja">山梨大学大学院 工学専攻 メカトロニクスコース<br>
       小谷・渡辺研究室</span></div>
-    <div class="chips">
-      <span class="chip"><span class="l-en">Assistive Robotics</span><span class="l-ja">支援ロボティクス</span></span>
-      <span class="chip"><span class="l-en">Gaze Interaction</span><span class="l-ja">視線インタラクション</span></span>
-      <span class="chip"><span class="l-en">Powered Wheelchairs</span><span class="l-ja">電動車いす</span></span>
-      <span class="chip">3D LiDAR</span>
-      <span class="chip">ROS 2</span>
-      <span class="chip"><span class="l-en">Real-World Evaluation</span><span class="l-ja">実環境評価</span></span>
-    </div>
     <div class="cta">
       <a class="btn btn-primary" href="#research"><span class="l-en">See the Research</span><span class="l-ja">研究を見る</span></a>
       <a class="btn btn-ghost" href="#publications"><span class="l-en">Publications</span><span class="l-ja">業績を見る</span></a>
@@ -271,7 +264,6 @@
     <a href="#projects"><span class="l-en">Projects</span><span class="l-ja">プロジェクト</span></a>
     <a href="#skills"><span class="l-en">Skills</span><span class="l-ja">スキル</span></a>
     <a href="#career"><span class="l-en">Career</span><span class="l-ja">経歴</span></a>
-    <a href="#news"><span class="l-en">News</span><span class="l-ja">ニュース</span></a>
     <a href="#schedule"><span class="l-en">Schedule</span><span class="l-ja">予定</span></a>
     <a href="#blog"><span class="l-en">Blog</span><span class="l-ja">ブログ</span></a>
     <a href="#links"><span class="l-en">Links</span><span class="l-ja">リンク</span></a>
@@ -283,84 +275,24 @@
 
 <section id="about">
   <div class="eyebrow">About</div>
-  <h2><span class="num">01</span><span class="l-en">Driving a wheelchair with gaze alone</span><span class="l-ja">視線だけで、車いすを運転する</span></h2>
+  <h2><span class="num">01</span><span class="l-en">About me</span><span class="l-ja">自己紹介</span></h2>
   <table class="profile">
     <tr><th><span class="l-en">Name</span><span class="l-ja">氏名</span></th>
-      <td><span class="l-en">Naofumi Tonegawa</span><span class="l-ja">舎川 尚史（Naofumi Tonegawa）</span></td></tr>
+      <td><span class="l-en">Naofumi Tonegawa</span><span class="l-ja">舎川 尚史</span></td></tr>
     <tr><th><span class="l-en">Affiliation</span><span class="l-ja">所属</span></th>
-      <td><span class="l-en">Kotani–Watanabe Laboratory, Mechatronics Course, Department of Engineering, Master's Course, Integrated Graduate School of Medicine, Engineering, and Agricultural Sciences, University of Yamanashi</span><span class="l-ja">山梨大学大学院 医工農学総合教育部 工学専攻 メカトロニクス工学コース 小谷・渡辺研究室</span></td></tr>
-    <tr><th><span class="l-en">Grade</span><span class="l-ja">学年</span></th>
-      <td><span class="l-en">2nd-year master's student</span><span class="l-ja">修士課程2年</span></td></tr>
-    <tr><th><span class="l-en">From / Now</span><span class="l-ja">出身・現在</span></th>
-      <td><span class="l-en">From Nagano; living in Kofu, Yamanashi</span><span class="l-ja">長野県出身、山梨県甲府市在住</span></td></tr>
-    <tr><th><span class="l-en">Research</span><span class="l-ja">研究テーマ</span></th>
-      <td><span class="l-en">Gaze input, assistive robotics, obstacle detection, powered wheelchairs</span><span class="l-ja">視線入力、支援ロボティクス、障害物検知、電動車いす</span></td></tr>
-    <tr><th><span class="l-en">Career</span><span class="l-ja">進路</span></th>
-      <td><span class="l-en">Joining Seiko Epson Corporation in April 2027</span><span class="l-ja">2027年4月 セイコーエプソン株式会社 入社予定</span></td></tr>
+      <td><span class="l-en">Kotani–Watanabe Lab, University of Yamanashi (2nd-year master's)</span><span class="l-ja">山梨大学大学院 小谷・渡辺研究室（修士2年）</span></td></tr>
+    <tr><th><span class="l-en">From</span><span class="l-ja">出身</span></th>
+      <td><span class="l-en">Nagano; now in Kofu, Yamanashi</span><span class="l-ja">長野県出身、山梨県甲府市在住</span></td></tr>
   </table>
-  <p class="lead"><span class="l-en">I am a second-year master's student in the Kotani&ndash;Watanabe Laboratory at the
-    University of Yamanashi, Japan. My research focuses on <strong>assistive robotics</strong>,
-    in particular a powered wheelchair that people with severe physical disabilities can
-    operate using only their <strong>gaze</strong>.</span><span class="l-ja">山梨大学 小谷・渡辺研究室の修士2年生です。研究テーマは<strong>支援ロボティクス</strong>で、
-    特に、重度の身体障害のある方が<strong>視線</strong>だけで操作できる電動車いすに取り組んでいます。</span>
-  </p>
-  <p><span class="l-en">In my project, <strong>TOGAKUSHI2</strong>, the user drives a WHILL Model CR powered wheelchair
-    by dwelling their gaze on directional buttons shown on a PC screen. The system combines
-    dwell-based gaze input with obstacle detection using a 3D LiDAR, and it has been trained
-    and evaluated together with an actual user at a special needs school over several months.
-    I care about validating assistive technology in the real environment where it will be used,
-    not only in the laboratory.</span><span class="l-ja">プロジェクト<strong>TOGAKUSHI2</strong>では、PC画面に表示された方向ボタンを視線で滞留選択することで、
-    WHILL Model CRを運転します。視線滞留入力と3D LiDARによる障害物検知を組み合わせ、
-    特別支援学校で実際の利用者とともに数か月にわたって訓練・評価を行ってきました。
-    研究室の中だけでなく、実際に使われる環境で支援技術を検証することを大切にしています。</span>
-  </p>
-  <p><span class="l-en">My master's thesis is titled
-    「視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価」
-    (<em>Research and Development of a Dwell-Based Gaze-Controlled Powered Wheelchair and Its
-    Training and Evaluation at a Special Needs School</em>).
-    After graduating in March 2027, I will join Seiko Epson Corporation in April 2027.</span><span class="l-ja">修士論文の題目は「視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価」です。
-    2027年3月に卒業し、2027年4月にセイコーエプソン株式会社へ入社予定です。</span>
-  </p>
-
-  <div class="stats">
-    <div class="stat"><div class="big"><span class="count" data-count="3">0</span><span class="unit"><span class="l-en">months</span><span class="l-ja">か月</span></span></div><div class="label"><span class="l-en">of field evaluation</span><span class="l-ja">実環境での評価期間</span></div></div>
-    <div class="stat"><div class="big"><span class="count" data-count="6">0</span><span class="unit"><span class="l-en">sessions</span><span class="l-ja">回</span></span></div><div class="label"><span class="l-en">training sessions at a school</span><span class="l-ja">学校での訓練セッション</span></div></div>
-    <div class="stat"><div class="big"><span class="count" data-count="19">0</span><span class="unit"><span class="l-en">pkgs</span><span class="l-ja">パッケージ</span></span></div><div class="label"><span class="l-en">in the ROS 2 workspace</span><span class="l-ja">ROS 2ワークスペースの規模</span></div></div>
-    <div class="stat"><div class="big"><span class="count" data-count="3">0</span><span class="unit"><span class="l-en">talks</span><span class="l-ja">件</span></span></div><div class="label"><span class="l-en">SII 2027 &amp; ViEW 2025/2026</span><span class="l-ja">SII 2027・ViEW2025・ViEW2026で発表</span></div></div>
-  </div>
-
-  <div class="grid3" style="margin-top:16px;">
-    <div class="hl-card">
-      <div class="icon">👀</div>
-      <h3><span class="l-en">Hands-free driving</span><span class="l-ja">ハンズフリー運転</span></h3>
-      <p><span class="l-en">Dwell-based gaze selection replaces the joystick for users who cannot use their hands.</span><span class="l-ja">手を使えない利用者のために、視線の滞留選択がジョイスティックの代わりになります。</span></p>
-    </div>
-    <div class="hl-card">
-      <div class="icon">🛡️</div>
-      <h3><span class="l-en">Safety by sensing</span><span class="l-ja">センシングで安全に</span></h3>
-      <p><span class="l-en">A 3D LiDAR watches the surroundings and feeds obstacle information back to the driver.</span><span class="l-ja">3D LiDARが周囲を見張り、障害物情報をドライバーへ返します。</span></p>
-    </div>
-    <div class="hl-card">
-      <div class="icon">🏫</div>
-      <h3><span class="l-en">Proven in the field</span><span class="l-ja">現場で確かめる</span></h3>
-      <p><span class="l-en">Trained and evaluated with an actual user at a special needs school, over three months.</span><span class="l-ja">特別支援学校で実際の利用者とともに、3か月にわたって訓練・評価しました。</span></p>
-    </div>
-  </div>
+  <p class="lead"><span class="l-en">I'm a second-year master's student at the University of Yamanashi. I enjoy building things that work in the real world.</span><span class="l-ja">山梨大学の修士2年生です。実際の現場で役に立つものづくりが好きです。</span></p>
 </section>
 
 <section id="research">
   <div class="eyebrow">Research</div>
   <h2><span class="num">02</span>TOGAKUSHI2</h2>
-  <p class="lead"><span class="l-en"><strong>Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection.</strong>
-    People who cannot use a conventional joystick because of motor disabilities need an
-    alternative way to drive a powered wheelchair. TOGAKUSHI2 uses <strong>dwell-based gaze
-    input</strong>: looking at an on-screen button for a short dwell time selects it, so the
-    wheelchair can be driven hands-free, without calibration-heavy pointing and without
-    physical switches.</span><span class="l-ja"><strong>障害物検知機能を備えた、視線滞留入力式の電動車いす。</strong>
-    運動障害のために通常のジョイスティックを使えない方には、電動車いすを運転する別の手段が必要です。
-    TOGAKUSHI2は<strong>視線滞留入力</strong>を使います。画面上のボタンを短い滞留時間だけ
-    見つめることで選択でき、ハンズフリーで運転できます。煩雑なキャリブレーション型の
-    ポインティングや、物理スイッチは不要です。</span>
+  <p class="lead"><span class="l-en"><strong>A dwell-based gaze-controlled powered wheelchair with obstacle detection.</strong>
+    Looking at an on-screen button for a moment selects it, so people who cannot use a joystick can drive hands-free.</span><span class="l-ja"><strong>障害物検知つきの、視線滞留入力式電動車いす。</strong>
+    画面上のボタンをしばらく見つめると選択されるため、ジョイスティックを使えない方もハンズフリーで運転できます。</span>
   </p>
 
   <div class="flow" aria-label="System data flow">
@@ -373,101 +305,51 @@
 
   <div class="sys-grid">
     <div class="sys-item">
-      <h4><span class="l-en">Gaze input terminal</span><span class="l-ja">視線入力端末</span></h4>
-      <p><span class="l-en">A PC running a graphical interface with large directional buttons. The user selects a
-        button by dwelling their gaze on it; the selected command is sent to the robot side
-        over UDP. (Repository: <a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>)</span><span class="l-ja">大きな方向ボタンを備えたGUIをPCで実行します。ボタンを見つめて滞留すると選択され、
-        選ばれた命令はUDPでロボット側へ送られます。（リポジトリ：<a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a>）</span></p>
-    </div>
-    <div class="sys-item">
-      <h4><span class="l-en">Robot control</span><span class="l-ja">ロボット制御</span></h4>
-      <p><span class="l-en">A ROS 2 Humble workspace (19 packages) that receives drive commands, manages the
-        wheelchair state, and generates motion commands.
-        (Repository: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>)</span><span class="l-ja">ROS 2 Humbleのワークスペース（19パッケージ）。運転命令の受信、車いすの状態管理、
-        動作命令の生成を行います。
-        （リポジトリ：<a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a>）</span></p>
-    </div>
-    <div class="sys-item">
-      <h4><span class="l-en">Platform</span><span class="l-ja">プラットフォーム</span></h4>
-      <p><span class="l-en">WHILL Model CR powered wheelchair.</span><span class="l-ja">電動車いす WHILL Model CR。</span></p>
+      <h4><span class="l-en">Gaze input</span><span class="l-ja">視線入力</span></h4>
+      <p><span class="l-en">Large directional buttons on a PC; commands are sent over UDP.</span><span class="l-ja">PC上の大きな方向ボタンで選択し、命令をUDPで送信します。</span></p>
     </div>
     <div class="sys-item">
       <h4><span class="l-en">Obstacle detection</span><span class="l-ja">障害物検知</span></h4>
-      <p><span class="l-en">A 3D LiDAR monitors the surroundings of the wheelchair; detected obstacles are fed
-        back to the interface and used to support safe driving.</span><span class="l-ja">3D LiDARで車いすの周囲を監視し、検知した障害物をインターフェースへ
-        フィードバックして、安全な運転を支援します。</span></p>
+      <p><span class="l-en">A 3D LiDAR watches the surroundings and reports obstacles to the interface.</span><span class="l-ja">3D LiDARで周囲を監視し、障害物をインターフェースへ伝えます。</span></p>
     </div>
     <div class="sys-item">
       <h4><span class="l-en">Path generation</span><span class="l-ja">経路生成</span></h4>
-      <p><span class="l-en">Generates a path for passing through doorways without relying on a pre-built map,
-        supporting driving in ordinary school and home environments.</span><span class="l-ja">事前に作った地図に頼らず、出入り口を通過するための経路を生成します。
-        学校や家庭といった日常環境での走行を支援します。</span></p>
-    </div>
-    <div class="sys-item">
-      <h4><span class="l-en">Research keywords</span><span class="l-ja">研究キーワード</span></h4>
-      <p><span class="l-en">Gaze-controlled wheelchair / dwell-based input / assistive technology / obstacle detection /
-        3D LiDAR / ROS 2 / human&ndash;robot interaction / special needs education / real-world evaluation</span><span class="l-ja">視線制御車いす / 滞留入力 / 支援技術 / 障害物検知 /
-        3D LiDAR / ROS 2 / 人間・ロボットインタラクション / 特別支援教育 / 実環境評価</span></p>
+      <p><span class="l-en">Plans a route through doorways without a pre-built map.</span><span class="l-ja">事前の地図なしで、出入り口を通る経路を生成します。</span></p>
     </div>
   </div>
 
   <div class="eval-panel">
-    <h3><span class="l-en">Evaluation at a special needs school</span><span class="l-ja">特別支援学校での評価</span></h3>
-    <p style="margin:0;"><span class="l-en">The system was evaluated in a real environment: a student at a special needs school used
-      the wheelchair in training and evaluation sessions held over a period of three months
-      (six sessions). The evaluation confirmed that gaze-only driving is feasible in a real
-      school environment and provided longitudinal observations on how the user's driving
-      changes with repeated training.</span><span class="l-ja">実環境で評価しました。特別支援学校の生徒が、3か月間（全6回）の訓練・評価セッションで
-      車いすを使用しました。実際の学校環境で視線のみの運転が可能であることを確認し、
-      訓練を重ねることで運転がどう変化するかという長期的な観察も得られました。</span>
+    <h3><span class="l-en">Evaluated at a special needs school</span><span class="l-ja">特別支援学校で評価</span></h3>
+    <p style="margin:0;"><span class="l-en">A student drove the wheelchair in six sessions over three months, confirming that gaze-only driving works in a real school and showing how driving changes with training.</span><span class="l-ja">生徒が3か月間・全6回の訓練で使用し、実際の学校で視線のみの運転が可能なことと、訓練による運転の変化を確認しました。</span>
     </p>
   </div>
 </section>
 
 <section id="publications">
   <div class="eyebrow">Publications</div>
-  <h2><span class="num">03</span><span class="l-en">Publications, Presentations &amp; Awards</span><span class="l-ja">業績・発表・受賞</span></h2>
+  <h2><span class="num">03</span><span class="l-en">Publications &amp; Awards</span><span class="l-ja">業績・受賞</span></h2>
 
   <div class="pub">
     <div class="title">Development of a Dwell-Based Gaze-Controlled Powered Wheelchair with Obstacle Detection and Its Evaluation at a Special Needs School
       <span class="badge"><span class="l-en">Accepted</span><span class="l-ja">採択済み</span></span></div>
-    <div class="meta"><span class="l-en">Naofumi Tonegawa, Hiromi Watanabe, Shinji Kotani<br>
-      The 2027 IEEE/SICE International Symposium on System Integration (SII 2027),
-      Kobe International Conference Center, Japan, January 11&ndash;14, 2027. Contributed Paper, oral presentation.</span><span class="l-ja">舍川尚史、渡辺寛望、小谷信司<br>
-      The 2027 IEEE/SICE International Symposium on System Integration (SII 2027)、
-      神戸国際会議場、2027年1月11日〜14日。Contributed Paper、口頭発表。</span></div>
+    <div class="meta">N. Tonegawa, H. Watanabe, S. Kotani — SII 2027, Kobe, Jan 11&ndash;14, 2027 <span class="l-en">(oral)</span><span class="l-ja">（口頭発表）</span></div>
   </div>
 
   <div class="pub">
     <div class="title">地図を用いない視線入力式電動車いすの出入り口通過の経路生成
       <span class="badge blue">IS2-16</span></div>
-    <div class="meta"><span class="l-en">Naofumi Tonegawa<br>
-      ViEW2026 Vision Engineering Workshop, Pacifico Yokohama, December 3&ndash;4, 2026.
-      Interactive Session 2 (December 3, 14:40&ndash;15:50), poster presentation.</span><span class="l-ja">舍川尚史<br>
-      ViEW2026 ビジョン技術の実利用ワークショップ、パシフィコ横浜、2026年12月3日〜4日。
-      インタラクティブセッション2（12月3日 14:40〜15:50）、ポスター発表。</span></div>
+    <div class="meta">N. Tonegawa — ViEW2026, Yokohama, Dec 3, 2026 <span class="l-en">(poster)</span><span class="l-ja">（ポスター）</span></div>
   </div>
 
   <div class="pub">
-    <div class="title">視線入力式電動車いすにおける視線の滞留を用いたGUI
-      <span class="badge blue"><span class="l-en">Presented</span><span class="l-ja">発表済み</span></span></div>
-    <div class="meta"><span class="l-en">Naofumi Tonegawa, Shinji Kotani, Hiromi Watanabe<br>
-      ViEW2025 Vision Engineering Workshop, Pacifico Yokohama, December 4&ndash;5, 2025.</span><span class="l-ja">舎川尚史、小谷信司、渡辺寛望<br>
-      ViEW2025 ビジョン技術の実利用ワークショップ、パシフィコ横浜、2025年12月4日〜5日。</span></div>
-  </div>
-
-  <div class="pub">
-    <div class="title">視線滞留入力式電動車いすの研究開発と特別支援学校での訓練・評価
-      <span class="badge gray"><span class="l-en">Thesis</span><span class="l-ja">修士論文</span></span></div>
-    <div class="meta"><span class="l-en">Master's thesis, University of Yamanashi (to be presented in February 2027).</span><span class="l-ja">修士論文、山梨大学（2027年2月に発表予定）。</span></div>
+    <div class="title">視線入力式電動車いすにおける視線の滞留を用いたGUI</div>
+    <div class="meta">N. Tonegawa, S. Kotani, H. Watanabe — ViEW2025, Yokohama, Dec 2025</div>
   </div>
 
   <div class="pub">
     <div class="title">ロボコンやまなし2024 自律型ゴルフロボット競技
       <span class="badge"><span class="l-en">Award</span><span class="l-ja">受賞</span></span></div>
-    <div class="meta"><span class="l-en">Runner-up (2nd place) in the main competition and 1st place in the exhibition match.<br>
-      Robocon Yamanashi 2024, Yamanashi Prefectural Distribution Center, November 9, 2024 (as an undergraduate team project).</span><span class="l-ja">本競技で準優勝、エキシビションで優勝しました。<br>
-      ロボコンやまなし2024、山梨県流通センター、2024年11月9日（学部4年次のチームでの出場）。</span></div>
+    <div class="meta"><span class="l-en">Runner-up (main) &amp; 1st place (exhibition), Nov 2024</span><span class="l-ja">本競技 準優勝・エキシビション 優勝（2024年11月）</span></div>
   </div>
 </section>
 
@@ -476,26 +358,15 @@
   <h2><span class="num">04</span><span class="l-en">Projects</span><span class="l-ja">プロジェクト</span></h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></h3>
-      <p><span class="l-en">ROS 2 Humble workspace for the gaze-controlled WHILL Model CR wheelchair.
-         19 packages covering command reception over UDP, state management, joystick command
-         generation, and integration with the WHILL platform.</span><span class="l-ja">視線制御WHILL Model CRのためのROS 2 Humbleワークスペース。
-         UDPでの命令受信、状態管理、ジョイスティック命令の生成、WHILLプラットフォームとの
-         統合を担う19パッケージ。</span></p>
-      <p class="small">ROS 2 Humble / Python / C++ / UDP / WHILL Model CR</p>
-    </div>
-    <div class="card">
-      <h3><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></h3>
-      <p><span class="l-en">Graphical user interface running on the gaze-input PC. Large directional buttons are
-         selected by gaze dwelling; the interface also displays obstacle information received
-         from the robot side.</span><span class="l-ja">視線入力PCで動くグラフィカルインターフェース。大きな方向ボタンを視線の滞留で
-         選択し、ロボット側から受け取った障害物情報も表示します。</span></p>
-      <p class="small">Python / GUI / gaze interaction</p>
+      <h3>TOGAKUSHI2</h3>
+      <p><span class="l-en">A gaze-controlled powered wheelchair. GUI for gaze input and a ROS 2 workspace for robot control.</span><span class="l-ja">視線で操作する電動車いす。視線入力のGUIと、ロボット制御のROS 2ワークスペース。</span></p>
+      <p class="small"><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a> / <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></p>
+      <p class="small">ROS 2 Humble / Python / C++</p>
     </div>
     <div class="card">
       <a href="explosion.html"><img src="data:image/webp;base64,UklGRqxtAABXRUJQVlA4IKBtAACwaQGdASqAApABPpFCm0mlo6IhKlmZQLASCU3cLtYgWUPIfyTNz6+9a5g//B2G+8/+XzA/ae/Z/3fV1/bfUS8ez1seY3zn/TB/jfUM/u/Ut+hX5zHq4f4H/49QB///bK/gH//1fHl9is6D/mH8N6IWOvsz1Kfnv5q9I+1X+m79/mbqF/n/j2/l9rru/+7/a32Dvfj8d5mn4PnL9tvYB/p/n9/2vDY9c9gX9aerr/r+Q/9f/4vsF/s1/+vXq///uu/ej////j4k/3lMJ2Gu/+QXYMsqrWOW8lx+qlWndvt9Q/iBUyH12GXrHXjTgU8Oh/teITpB5SI61ipRG1s5aj59GL1wDqzsqr6lkwC6WkzDXX/8gwreHbPam3Ya6NXDsn+tVI5FOT3vklKRmSI5yns9wIn9UxkjMXBicWpj8rVr/9BvO0h+Tk2XMPoRQ1ffo9iAL905bB7Ln0R6vGIYBU7lM0HkvztuPE6Gqxh60kpoin22LmrBCYa7/5BhW8O2e1MpU03By40Y1uRDAW0Krgm9e2OhBVs7SH7He/Gz/b0uf25i+Nr2szAlzpI3xc/Wd6tgTLmTA9fIaOrBqHCTKiElELvh0q7bAQ/nc/6TX8jrH7GhCdoOMKcUpu68bK2o4sHslDdntTbsNd/8gwreF/KvMeZtres8ZhStQ8pFkMnc6dKfSmKTXK1rz/bFgoX8uca5FS2uzEqHdfHdNwECTUca15+2irKw097WuY/N0C8pf2/Lu/cPU76A/gOpLopIhCCfXhK78j+ve1NiGybELWvgf1XDi7us5sNd/8gwreHbPamU5TekUL8wfjFWqvUh5aujfPqI8DZtZFhFlE6dlakVTtJYGtg8rM/i0OMddkxAUgggqpCXex4mWJW1nFaA83XNWzjk1lj3cj+U6gZjCn0aiSzDRYpwhqTdn/fuA7d38xe23bmgfIMK3h2z2pt2Gu8pafJUqNohUEMV4o7ZWlfa+VzG53FsHgrqsQdU+B9QIuBsNT/NwVJGpHMc4FLe2RPpUG32cfpbXIm2r+DNJHAMmz8tFx5JEsvSH9vQOCVSaXgqThr1jjJd7H5EvDgNaGYao6VolVybDSgz2Fbw7Z7U27DXf/IIzmN2bVBTvy6BdpGOn3tjE1ZF8qCg/yOuoykBBVyC98Vy9BLln2kqhiUWd3VvRj1Zha2EnuW0HLZ/U8b0qeyfS9rHFXCqdZj3mmdkpJ9BoB5p6/tie61JfEJCPhAno/lQxg5332Q7DXf/IMK3h2z2ptXvS9xCItDr+hAHO1m4qigzi9XfhUK1lShNmQPuGhdmUP70I1yi4tESaoWTwE/3giCLTDmNSQDnyqTBjNOK6idT+GmIMV+FKUpV2LhhD28aJzVH2dugcVwquG/bL5zKxpLI/9MdPnB91ICHntTbsNd/8gwreHWRNFIokAUZIWLnVy7Snhw5kauwq8lzHt+BYYJlQFpm2Gou0bIb7TitT7CO6C2ZNqkmn7q9f3ghvDF5Y3VHLjLMz2RjNNqYChwWHdtmGXA2w8tvTZZSmlUIk3JDMNyAYllLub7LaIsHptb1JvWzy9VGMW32HyDCt4ds9qbdhrgF4hLqSMTA5kWCEKbo3idgIVEegk1Tq+H6Bxk0O/HpBt3lKMCWyYVIYuUuKhKDV6/dtgUU4Phf4Tt0SN2pNurzogNkvUA4fhgdHyBSKrgK7NbaELoxpno2577fIEMzm/4J68PDyGm8zpJadpBhW8O2e1Nuw1wWkNl6pBhAGkaA8ZfcIC+fSSopQjRJlnNfnLo1WNfdQYzq+YzWid3Vdt9iKGHkWb8FJvyVyWGMwHQgmh6g+oya6HQe6mY6GW3Y9QE/5LHK5QVOBLAv1Bpf+ixZ9wVoG6L8EXs2KXKpG13/yDCt4ds9qbdgUjv1kq61g1MMVgeTaExK3OhYCcUy54RdxKJP/5yC//HT2Hp+xlWX8ONSFjcmvdKzVTqQYjXQuAhBrdJth8/ET53l2q4bP4jXe89UwF1VCDpuVT0SAtIxacH1dw/4c07HO3xPLCYMmb2DXf/IMK3h2z2pt0jE23UfxSoIz4bPH4Jw0NUX1l2qpjrjaZyN1NqnbfC80bc78RyTiNqybuJXtSWUzm7lKkanTEcXnSBJVH4zhG6wm0/qHYbS5R7G41KUc01PLe2NiQNbN6kyyItf4x12iIGgTdow13/yDCt4ds9qbVz1TgU/6TrokOHMfNhZ+/icDohX5KasHZzMtWJbIiNa9T/G31Ie8O5dR06HDmlJmmobJJqoOAywkyjM0+vhj8pGYCWNUz61oSgzpn5OyCMEiy4rCYu9fs3Sh+qvVU+7Z7U27DXf/IL/Mn5LYD/utFI8l85lJliwn19P+1j2OMIfp1MqIcSIE4M7TtU7lLchZpLSkc7Ji6wOECMX5UzqdeSgwM/rqIXnNV7thS2mIqGlGdoKZAL/GJaZXWATMf2/8MQ1iPyQJOiObLkGFbw7Z7U27DXeUSlA4pjqxjB3kBO3pEtW+OBq3bhStLK5dST5fWF/aUijbcHUuF9nrOZ/useezU2xUHY1UcfRJLDIOffQivY48ktsJi7v7Jsw0Mik44RcXCV5x1V69OkDVePmIS/O7Z7U27DXf/IMK1al5qI9mdTWzeLnOZPtVf0jZ6xzkl+5bl+/pGiksCn/MBuqnhmHxi1zoQ99AHYmUdDa2dtRB06jDqhK1tBCD9tkG8Re+hFhJt5mp10EWuvXhlwPOxcZhFiKYkpzt1lXJB3/yDCt4ds9qbdgVSRGFppl+neK6YhyZUqCjqDu9H0EYB7A/aIBdrEzH2PBG6M3tIuC4mW8LNKf3mQnqD03Gve317C+XQrUlmr9vZF5UwpCQ04MjePZb6+NEtMnlcdvMcjWte4Nnfds9qbdhrv/kGFTHHMcsdfYAvG1nG3MzxTOciiGjfUSSVRy1yU2b5rJjf27ctgVDOB+OTPvOEu/zTVjhykmYI4yEnZ33T9bS/+WIdv6WBwpt0afApsbrowfuV+A6mNEkLJ4cPSxlzWyjQW7DXf/IMK3h2z15J16JvRGSp2Ke4Ug32+GWTV60FPvC0IQNRaxwi65C6wwuMrGGePyf9rvA5IndwS4nHMpnYH5Svw0Regzss/y4WlILgSGCx0s+f6tkjF0iYSVJ43Z7U27DXf/IMK3a03bgKGRnDdG9vt9XndsC4gs4JOdhDYxUHg0FUw+jrVHjFah61w1azGeg/yyOZd24ga2RqXQGwD7JizGaaaaCmKMsFwv9F3urUyyFOwbC/Z/7b5cEQbMNw+QYVvDtntTbsNcEufEWcwNqKXUSzC3UUGwaH6c3B8ge+hwZGpetweRaB8ncASz6td8KOQWr956J9poj8U/XIejn/DgJQ+nZ7QEpJiZp8MuXydT4hFxl2wPwx26OxDXf/IMK3h2z2ptYpSPPrR47PEPijLZfBma7KwH0RNhpQ3eKyGty5hH9eiLQrldKUaw0qhL6IEo2EqOZnd0JlARirVaKfC49MZhTh848zhVYIMSHwwib8nF0XGx0Pt7VNaDAMDFUPqYBXPhCY/+QYVvDtntTbsCfnYFfPBuXaTsQ5uq3smEbu2LD8dbIETyVI7gKIVqwlCgpX2Pk5l6Rk94dyt49YXabNh3y6ElNKdbmMq7Nizs6XLe8lnxTAwyN7UX14aeXhQRR4WLxq7LfpFinCNA1MySSfVmURD8bfpkZwcuLgHYwu5Fbw7Z7U27DXf/H5sLObzSdVc2jS9/E8A+yNRN4aFCP3ikG/opce3IkdKfywN158NyA7Z4/IXj5DEABYCg0AXPP7/SVzbgD8Ct5ZtTzi/9w5l6gppyvCvrlkLPY4hjIh0diHNaqTknl5Psxk2IcO2e1LwAAP7/1gAmhsVlQRgszLv2X66nkjWpgX+p+LdOhED2FWZKuMH8YcveEGTJ7rQ6QTgL7DWKWKrtkLKMbwP/Irz0mPDwaPygqiTA/vkEeg7pGDYkHRP/jdqatoZTDvsOmGKyidOR0UYE7dr7o3HWcGz0PSqo6D6lX2NsmLhIE10J8EBvUZ6kyjAY++3oHrfEa9zwb019dgQJtRrf4rsShaPVmdtGG3fqkWm8IZwtrTdHzZFPlctsmPNAMjXSsfKQZU8qrAzb+A5FB/QLXQ1yN79mtyaeaW1E5CF+HN/Kd1cQAuD2RuBoXEYFygNt6WhDPWYPd4noSMFykfe37YVKoIMkmQGnsoT9uKMKKz1yjq7rFR0+9FHIa66CT93qSl2h1qRKIEp1US0ckO4hpHfG9k/+TPd+R/aA9N7USNq8thWcC/MkFMgYNzEqACTWqQGtrEpv3f/ThBoxlWrs0WZb1s71nwV5A4i44w3vQoKa/lp30LBDeGR64CTEM2V79Tayecfz1fav5sIaE8Y6vqJofXIa4uD/EEFXp2Jxua8p1WCg3wvoaMIwhVuqIaOidetoC8ujdfhtI6TsnVUlRIW/rkXt9F8md+eRnvK1O1B54xnhp10guRnui/fXhvaxoKJl1N4/Qk3lOwlNaXQw5pFW9NCvBAAF+H2C2PPps3u23tLdgnpCQfxYufU57a9FPCceXSHlGy/nWJkYlo1bUlbCxcw+SHZHYrNaGrO27070SV/j8h7808TuKBNYEIhjRhroY1q4+0yNN+G5MRzd9fzOtpPiFRswzombPzIAAMk2a5Bmvg88GI8gOp/QNPBP75hL1ZXRpYa1hmGzEkQoZv2t/EevajIqfYb4yxNwBMN0uW1mlePHE4SPaMXSVNMRAJW+V7JTJcypwfENJJJOYMuJs7s6G8bPXKmiwMvo5REdnYbMkf00M6VkZH6TS7ePjMLLTEiTrVfWP1XFIId3WtxddETEm+gZHffXv01jEqIziC+K5g696Y9xnzrXvVtyGGwWZONFCv2KCEP/JsvbrqZNyXPNpcWD5siJVMfmaqkfLcE0dsJJCnuTdpqmBid33dSFIqoJIbQDkwAEt/kOetIxPKX/jcQnBIYjH1XccgvMF2mIVubdBc6dU/5/C+M+leWusMjkr158KU+FIwW/QdJa+xecnYKP3lku1ZhPptbrKBsKAFuLeuWa/WIJqoWBba1sVaRTHJnN5+uvbas7soL985J68DyfmVVNOnhVxFupyO8zqT0CYPwb4W4Ygt8jPny2DUW4OkxAmSL5YwAFAHRC67bK2S0BT3rv2emymd9YvFl+CD0M5dxNOtFc4fIPYcLvTIgrJzmd8KEsU+yHed5t4rSNAmKsJNTAsEux4bx6fumP/BLhVuToFwMDwuCIoUmUTxDeobBUINubUUnlh4Obgc86XyFqo3KqBIWiLo27HO+5573Hizt7LqVlzbGsDQ5rFP9ZUvvMV39L9KX2f5CK1+/bGEKGNMhUoPjIBTcx1fPi78tn5fW4Ght1G2OmrIZAftQhhyRIVV11PH4dnEnxpF8p0YZ3SEUgW6Go0COzCy3lV+JsorwI3HhBo5zv7KEnd3Xu/Fpebo0nq2TK4BzhpR/OENwR9iPa8m7CgmUbD9g4AgEivLqB9/dZ0h3sMRHCN/TjX0Ku0D+2JfQ3ko2GmY3BREccFAHjW53PmKK9htBgxQQDNgIZBc09bALXTT+XWneBuygdY0eDss96zvwk7cnZs2Fgy3Aeg89bcIx/nKRnQCxCxk/DantjQ9p5xBuRK6qvufrBnU+9rYddgluVdfimFdtR+cg7mq7Wbny/N0MVXIv9XoB9aYRHnQc/nOXdJP7oEl8z7k/bN617SmX+KaHLawM2qqFqlNSnhufcUwjlEyqXLHo1JaGJU0nhIBKgZkEyhgsgTHw1E3JIBmUwKVWhb2h8Eba58Xku/2qOdI6Pd549to70qd0J28TIh2NJhi9eczLCQ2v7c/NE0bRIz1bEuHymXtU/u3cjiuvgeA75pYM/7i7UfHfdG9q1dAd2Vtgxxqz6zD/gbr7B92TapNms8Il+s/oPFi220/HKNbHoVvbkNALMbGwdcGHDiFc8rK8kGc5QV73gvyV+RAaLv3B+KAElenLfNSwIHwHknaaQq3b7LADJnYmvPGclrdf5x6MlAYbvBgpTgHhWNEjGd3sq/tanN0S0jy0TN5S4Bj3T97NEXDjFLq7Y51qti6VBYEMo+Tz7pZFtBpo2Rr0PN9hRRoPqtxs64+8gK2R8bDZxYnSwJ6mwWKadQV2OStRSb+M1lmdjKUg85jnaNXWkg15br6BXH4fke2d8FoGjHvTt2xktrvTwc0v9X3juETWXx2hh4/6xa5LsNCbaj89l9yx6Hj9TSu20Ef8mngjbpb0bBpnZcmn0x3JIWt/+Ll7tCd17J1m2FYzNt+GbYYoneO7SkvdjfKUUbNaL2jTD0jtAirISgSnB05HjHuAW6QZtCGNBRZyckrrbD7fp20F9+8MICuFknm8K1N37xdNTn7Zm+t+pri/86NmcmnxCX9uKlVhY0zMTsiYZ5/COaULNxjkFbegYC/iDEV5YwlOmOb1T3JDF62awDIkFupq06og+4TQ5ZL74EaatirkxPNclJDvmiZRIV3UFgPEX1c1E9M+mTTYY1u2NwvtG1Wb1BkFG0F1tjPLAySOWBuxMwnr1Yjq++NMWAWY+AK6mHHOrBuwIDzR9sI9v0FrqtK3gO9MZ4Iby1Bk0YTfRd+IAJNqRqyrRXSbWAqEKkA/kTw9s7OmB6LE9hnIuCg6L1NtAZNT/iqhvxUXk7oYCH6bnxjq8Gx6JdWDck79qTYjJO9s/ff+zsBITa1QY9O5d74U4rwj8ehwaS4fo5kWKp897zVqtnijDxj+vHLVKZqB29Gd34TCCrtFrpf1dN30K5ww5gWJxHBe5fE11ftfL9Q86C0DR/MtRlcHTkGW+P9LbPyveIRBV6sUnk9SxN+EkePacO3JA2R7rf+v//hgH9gpYLf89/loD9o+Rp8D5LECvFqpl+4x5E8L1mXeMRROTfGUNaylvBo3RRS2SP81ykq9hYL39ZoUmJ1S+HCHXFrYvCV0gGjVG8kHSLhaJkfoejIotR5Qw5kJmItIq4E8Zx9cAgkmzAijcxYNoK2z2xtTxxOgDG7FYztWIRodVo6MOg4QDxCw5ZROVn+CHST7+sCMBbXl26XQgr4jntcRlE2W52rsWKobSrxSG4t0p1CTfgAnt1njuPmq3eiRId66Af+mPB37Ng6yzSurWcCuBTnvxRcPQpp5Ojbcwm/Vd+9MkRJihdw8fTS1pUUbkg0IXZ/6ttog784JN51eBK3c7gPyUQ22iLAGf9Slp6KZ02s375bJNDjjUeSnF1WwoGhAjfcHMRfJJgqN9IZSgqAaSKwH6RV+0FC4eD/WukV71TvMF3/u4abotAhYLk0Ls6poWaHXboEELhMPXDlBvIO9aIKf7GDNaKdjIaYryiyI8M5bdyeIqvfHNIWbpsa5BwFQdeyO1zrFitZQ/4bIpZYxnPgz/PzLx9fYQQTkuLsx7LlYJd1EKxRbnnwj/erSag4sIYXpmqOGpxLjkgoITsDnAl58bV4YAHN+/BNMjTEulmw9+kG+S0vtMvfQ2KrgM/x3JXjK8lkobyF4a2I7mIDBCMsH4AScCTxW/oTyK4lK03MFy3JffcjEsREeI61Qwkg2+9osz3Yml+/7NG5mbMbwYokev/L1RGH6dQnEg/KJbaSBhbQ4GUy3sBSoiQFQvapbNy1lY0TPJ4LbTNkUj2fZUyyQ9gflfRMzr641ZGmeVZ7s3cK42xsnprfO7RTu41TvJcXoJCTfeIINn9X7STkPgXKOlz2Lkdttzd1rtjIqWL5RUbZ1AH4kP0/KjfPHqJGvNqw34OiD23EQfSl2nsp9Ksz6EXbwx++y7Su0iF6UQ5IZV6cIJ3PgvL0eZLQPtZpgXRjkymJnmjq96tBtmkaUj4AwH256HSIaduJ3winYzxDytrIHYFQG/0Yi075hISi8wi8SioCFESR19BZLY3whiAk9UAZjp81KOED47e7RpeWWrevxpoFy2FQTx1SE1GmDDUaaU8VMMQ1sN6jrnWrtFK9c+EfVPoYykUmIgq1yHdmpUP44xtqVp/pIsHaozFhRe30MRiBhcbyHIXioYZOcIJUyLhCuo0OpeBVGdDL2CdFExsvhprpybAYdPOYANeB5SzWAFisiYtTskiVbx42MvmTvFi2FbcKRUngBZGOHnt5el3DslYvmQoQr9cyGHFrmwX44t0Kk6RtUpERkTcvvuxQ9pbAWhRsEG320xmTPP+Kb/6J7IR2/6MKQZuLuHRx+z/v4/RQ9bD6vtDxuiZExQkpGwqnCvYFLtoxnh4LbJkxAL2skBUJZlrT80FcrHoQAyfBJZzvU15uu66EWBlqf261hu6I4+sTwdeujEtJTV7Jd6hpDw0Rnv5JZWrqOiVAmjM0sZETTYsGIsfWUny5NsZOcu6rm9Frsq7Cm/9Es0BVRunVMaBU3C5XJyagLzUQA4IPdBZjw5hJr0L2wNMRkNMoz+SZRnGx3J31vAk6eg8wrkvpcAyubeovBTSNxw3pu+i/oCdOdHMZjZmzWXZTz0JYnGrnCJS6GF/SKH2eFlloWA2Z8qV2mtBmq9T/QTQZYJubkmurDbzV89V8DKdGi8RbqSvHOKHe2ZrTeceE6PYWiaykiU1gkerinrjqSFfZaSO2cX7sslTodzWgWfnjEculM1tZYuuo2KG+LG7s52Xe4ig4ZaGHmGYEm7fzhHRc1qpQlZ9lQ/rAxXKNv3enXwCfNCngQ6NyZQMk3T+JO0ZBwNXUZltrf7wHaWnkieHF152/F3xGESAvTBI2Dfbo87FULl9aVqir0GFHRASH5ZsTCI9T1vwwkYayDJmKj5MIPCed1kuWiNToop8+R/ogtPkI4MZ5bMZLD+4SQlIipFLsO0OhMl5dSpUPKV8TpnE2m9/sf+Sv66CpyTuAgd9/oooh2XCaSeq8nr7ID6/s7QE6Wj5N/la6eukAJkQMRP7nqPf0ohhBKN64y9tGc1bRZ5Ft8rMSzkoDCC/X6K3hL36glZfTzpa2+t6vLfyK55P/Sy7AzkXotswoSiBHGGSX1yZ9rScY9JfnYv6J4Vfap093zxAh/YspPqBnvh8QK9/744FUve4uJcSyTf9RENjCkQL6mRU6QLEkVCW8jLoKsdcbZEUXARCBV9xXQ3NAAM87DfOt6ghc8IbojRITriJ8AHgGmN5nt19E62nEvc/UjlgmmjRuF1McPV0hHaugfiNjH9+nU8/j6Qtwnpk7xT9dcvD2vZp2ej58kLaSWIiysDxMWlWDhOxGJHgzh1NPb71q3AVo6ng4mqYKVXn+UFphKG2fI0kds+V2KSqNQ5TKGQhsFoxxTs0hQEXYrA154BkJ1uoIeHydvHVYA18kdy3fJgjraZ2Hrp+CJ3lb9Pnrx1nqLj+njnhbqoJYSuLJ7X2jXpSQfu9v+RJeGxJqRc52QM6XAWJqckQTW4CVfAjxVuZoNhwBfTb1lRofCx+pIY6OqSf9yhawIzhfWAYm6mtnL78qw/8AUaXzd5MJ3zQqFipUQPMrlrhCofuYRePx0pGGU4QtL70VUQdsbfCa5ud+ROFc+uwZe8uJxRbGN/uBRw2vbKDzH29EfZfmmtiVmD4DGKzgXAC+D0+vLffwZAS2QDg1eycFvrlpqns43DW6fK+Eoxpj+gyEVKmVAd9s+wokPyMX3M26/59ykFpY75O1+NGCyaXutdNkqYrd77YzcTgDjVNcy67QpWXsNl11/ObDJbpE6CmSZPhkXRMANnuf7iJW0xDFhCsvprZfRzVmuN3QMxBDwgYa2G75nd/NWCTgiVjJwankO4Pt80SSyjLOwgrYmrU/3g4F6SYf0caxNDKuuYtQVsf+RV8i6DSQJVa1/cL6JuMdNICz+B0DK7K6nV2W6pWniVuiX38ul2wF0V6dYJhQfrclYy2QW6Skzu1Pfckqz1ubg1r2GXX+a04NH57lVYmvBfmxxkYO94fg/0kOqgwsL1/kQDwQ3YopzF3gJyc36jWAEQ0UrbwA5H4sXA2wXDjTPVviP6o2eEO7IUp8ELJqv7T8b4bxwRQtOxIiu8XdeYeC5TDDDUqWXNn29fV2njOLFj0Zkw81sVZwNoVogvXLwBqBNsrQr1vqqfgarZ6McQqhu8P8J4geB2ZrAjcIcPYMAa+fIJ0Qumt67H5HwqBpvJ8Mk7cVHkHgw8xpDSYJY+lswIwGjp6ei/4VrnYh+esqaIuypMS0xf/J+egrXG+fxsnrOnI5hfK5dYOmyih83Xn3q/OaqzIKFFIfn11dc3vOgP6oI7Kt0T39B62UkeBrBGkbzWzgRzeBVbY9LoSP/r4WVaHSTZ0eMUagBvQUYx9nzkWBm4VQe0tTw7L3vgEAoasNnqFZsSFD1G8alJX0XwB4vTlV67blV6rEQPvz9po4zYSe2VeKeneE9ViqGAnlOIBLUQjnYzSCLBg13tGsrEN9gkiwYp9FJ96vAZLi8vPoIMNUmUlmad2pj9dFMwtf5olZqf8OmvG8yelWDimuLqK7A6Gxyo4qn5Wuwm1M1jGWm0wsIPH2BB+aWS47wFYHeeE3MEwF0pVumv+RNXviDY5ZGk7/jNUMTpGnDkKUI+mxPftedwj0d39WI3MvnNMlvhCSgJVOFxd2JKpcLvDLdMJrw0TyvZazWZkBBPWZAxT6VMbVuyvvwWTIajjvmF25hZBx4BVuNhAPM/6nH0PbZAcm62Als+b5FAUdAxMuCtl01pzheplT7bCInFliY0IZubSdKOYjRwz+WRnCTnugvHOrnH5WJ/8yeTIMVNxb5e4XWbkM+6wBJyXq/Quytk0FjMxvzG69hlB+X4UhP9Zh27AUsUSeRoNBTbSanBkwkZkyTVXbZMrwQP1BbEjtIwZ1joorJHhAioixbahIdUI4QttfqPSvs3klid88vfBjGDe23sVgaILXhDu1WYr2F0wQk+vhemTm7MwWT5wFDKG9XnHd2W5laBH36YzmHewNWwX+xDLSxR0Z9BwnScXSVmezsPFY0M2uiLDu+UhZLadhjX1IF9J4Xyl7JiaE20McdKpBOLU6OImKRgnG/IvalEOvbg9+/Jg5B8CQAtr3s9Mm+qzGVBFQbPmDiBBYpPK6OJTR1ucSVRdgnzMFDA1uKj+4zAJ5W2JQEzG52SgvHObFXMlgkcOkjEoWmqgDOnDW33+8U3etzuQ9Lm4IWUHS5C6wZ8GkMtLTg/rI73k+wNu6TPoaSW9KC0jhJHraw8jenEtrZirFbpeCrzCir91aOeK5K8lpLRQPXU0/qFYFsXdpCx/2Sh6V40NN2bPy7q0dNSydWS9zwApNJcT6MmqX1d+wk6kVjRximorcZZuEVlQ5ITYjNnGROs5pV+aa9c0kd1OV/OzxIQJgutPXCviANTWPj8v/sPoJjLduDxq/oe3Om1Cwx67TKkGfEQJHRF+HJqPKspcDVxEP/0QySjwyY6+x6gHr9coVfAmHjscbWW61U1dkIVj0OP22Q/8F6T+XogbTMV78a8SVi4njnVNDNWO+pejRU7MjLqv9p5eZz1V2y9LPr+PbuG3e88LXa/Uwg12zp1n54NdD+66EOM460AHU12DM3mOOOUkrOAHogz827X3dSbO3rdgfo0rEqrpRJ/x2j8rY+Frrp5nsusx1x9jFWW4mP/eUOyV94Bd3zSdF6ivaAUoyNOhNmgVljbLXjXWoY5V0QnGwkhbol5hsIZvxl2azjMvV3BCOctha83O3MxpTRc+MciuhrlJKocgN3IDF2y/ztgZE+um5GG950S9dyjOWkLmR2BhFc+CPP34YbDbmBydub5+xs2noCeRktjuyEVInWpoRWTCqM5mfN14TI9tOCzTiamBP+hkPE2df6NX96mCykuQsEoGyBXDGiXXJJirIAmya+hC8vSCfEdv5c+bba0AVMbnIo1S9o1dNow10KUvwyEGIIkbk4oHxMmBegDaTe/Ib7h3qimN5+eWOXxsGwfw/aCarDni1abqo/H7W+QWWlP0DpQNEtSjk6ofKsLnYOoolVVolSMEuiRvi3DNj8rXvAcyHvXqXmOK1I7Yh94gLWhAV5rUCM26NdsGJp3foOZjHOMiY2LCqMFt86fYtH62mOKGUnlguTEAz4qczKDu00mQcwHZvIZNhkxmGIJeR24MsJYAZwIVuCbA9hYCNCUaClLbmMfZvdL/WmDjKcNHA4FLVdV0kMbyohzVMq3lUGW5Z97QR9aOUB+BEcMkUAnxp0IoP7Fh4enpCAC5dewUuQRH2tLnpr0ozSKpEo8isBNK1o+prQnwkT+/nHSDLDjeoayjHIMTRiwCTF2Nnii9IP66byleXgQFGmam7bED3B8SLiXzd4ynPcIpqKRS97CXOKNgMMnOEwBuRBh/PAAKnIJEjUS8XZPTmB5SVNvi9pWty1yd8NoxN2MTPpYIRb04TA0j+rXML3yUVj41rablIFkpCuicl0Q+KJWMD2pCUdY4E5BCG/HGmvSdIe15r06wBZpHqkioE9mBVRNLyh31D/0VJNPBrTcu7ciLWRUmmYqfNft3V4hpmWPgkRo6OYZfJAQe1EbDLa0Oa2tHo+1ukz8fq+PBM/zYr2zz9eZaIma71qD+lAxp3TpTLQU8mVAXokCvfAJtHsOagJuM7WqZgXS0H6ZSn+zfQU9QOfgYaLZDsumae3hzjxXtxQhlijPV2pnfx4Xi3tA6OLyKpa0vAK0XA8y8EFVp+ipYe00o9C8I6sIJm9qaGxdl0U2O9IRTNBm+kISzLepdynWMcmO1aQRSl0Y4B/9U/QmSdh5KkOdg3if7tjVcFzS3Xlg1JKzNi/2qLBMOIM4bXm4fymzLQzVubeuaWFy4lPmIhbRXZfSWoovMUKl2IOEzgcgIAizLAorI+SOyCPRBTAD7W1Ihsy0usOA6D8LkyYkizsro3c96SAfS08qT98RQ6jv3CD66wKstvAisS2YhTk4fSN1mxeGdcSncqB+xxkiiaQge0TArD8iC0EOnn73ZXQJGIzBSuP7wyl0A/wTkhTqyL5C+8Lm7zYxCLAFUpVaBThl3C5S+lJ2J+zNctMm09xlBqavMyWOUA6Q230LLyOw7pbQurPMB8kMcx717TaP9URJOlyQ/M4YGPyQFjJj5XNSsu5Hymc/LaVnZqG2KyVWzPk+cRT7zD9t4RwrbsYI0VvwD1bRKAXwMd3ggwpyYyKwxdb4PGZtHCSnij8y2G3LnHNMv1MJueIie+zXW3oIue6EF6aQ04Mrln8X7CYMmgRt++2n4NSCurZljLhGhOQIYwpbNurA+MYHkP1nRUYKXf7NzND4M7kYQy2g4Hw/JXiXqdO4Yzk6D9B9o4TeW9ExARzXrj2A2sdh3Age2uMPwdIf3z4R18MemoM3Yw+nNGrIst7SzPLmUw+MmxNExz2Hl9N5qMaR1xPVwO1v+mIkZmznvS2aNzohCnkD/d3mszYfarBfZOhmNL0Kx3LB0cMym6KZHW85cJs0o5mCcFWEySfZpE1jFJWR8gZaSAeWWwxL4lg/U+DetYZmgumepeU9TRx8tshFmY9tcNtdFJjbdjpBVxN16PXw2RAG2iMYfiBSTZ3m0NkNhOBKp3mwO/INw6POSoEV1+zmQKzWYOjjkSJf/IQaGUm9xbnBjil9hby42Kp/yj1wsx/5IKNhJgI+KpfbbSR4H78+zK9nIpBN3fWp2DhVTyVdwhNBqhQKk33IDGWyAMsActgPzLwOd7QzpX0ndF7GwNT9Actmq3CkLcueoWLLSN/s0/XxQdZwpskUQn7tZy3exNdXgYleZWcRRuKSkcesTOKEu05Alyz+zZTwbHTLfQLO5eCnRfzzG5z58zjYAspvcYgDK0lruRxEJq2EjOGexp/tIf6yB5Vfj+HO+xUhXB+sAPVoRDZoBi8j0hb/2RZgpO3CcOgl5R074nhpfnnYjJOgzDrxHtS7go2hVUPAsuIbESlrfQZJIwcQ83btQg5XyctmlMcVW5Ksc+1hznj+OC0+1DgBFg+3xuKLeYwGY9OJLW0D1Rd38ifF9tk2QITMWdqKsjA6NF8cgssQ88g7BgBXP0RSmeEE1TmDoI72RprFxQXvmsA2kTZtBrEjGcFPiEYnUwVvzsPz/n/ihA7jnwqSDY/VWdMb2D8AXpLNeIgRIIvLYlpwkZABHv+h+5nxLRgSQAJQvebG8cNyZpF7lEgurkaOWKPnq09ar2Uuu7rR/U0KS4l5P91cQMFQHgnq3fW50hhOqHe+RbwZuZUAPHYXFYINDYfaGTXgmMKrCE570+94bvX0UmKPtvJeNITwRTIgCJsZQQFhfYICvtPy5kes8TpxcTHZyxantKHKlzvUhLrA9dR5eCat48nlZ8q5Q750C/15hPRQ0WE/gUWV6fGZvWo9M0axJAZ6xVspxLRT2nyi1g87W2rNJvRhqNOrlRbOfOtRtn5NtjD7jcpFO5QhLOQNTaxBBgh5lfit4ZYqFizUEhqx6rwoAurK75JCe2jx+P6X0ugONQXMkxVKDtFk+hL3Bw3tRR4Xdl1tKUof/5sFWW7OwWDsZ59cL4HP1mACu7nMs5bZJoVhu0G2z/+nwRWEU7fgTZSfCqLQFxJqlMPfPKR3FwuksIqw/9gVpE9EBJydXob4suhq9FKJIZffLx/T3nsfNrra45KiZy474/8iWbWEHcshlwHXaz4t2YDvQBawHxGRcOVswenRp2vCttVoIhyrDdB/TOPqYK7ruG2VwY2X8S0YkBsP1SqVAzETwiRWzhuc2Tw0wywsEwuJLzl5GSwfs6eaJWeUI9qpGY63++b/JNK2dyU/eAskKV7bW4shm1KaA4Zde2PLE3BqQFuNKYzVHK8yqmm+0YM1jE4/qNpyyqHIOJ3oaqSZYMVrvoahw/3kM23zuerG2e1ts3EkKRCytr+fIt++//VXAy+ynTAGp1goko+ME3gfV8nfhbuC2tMGSQC1luiqF09lXL7MtYF4Gi7aLKcTbzHQy8H6TegMaOMM1/tXyRObViaNRMgUl1/XouVP2ajvOVbi+mKyRCnNi0zu0hhqIe7FLYMHB28l3/0dS3dkxTbHdT75d1/gMlkAvUdx13hRYiYAUH2l0wIlFJQ4rf7f92OFCq0NAZKrgMTDQDbDKr04e/rZ3GszvVHc3BEgAad/EQIhwfK/pRFWolBavVsGDqN1sDfA0EcAXw4raon9cc190h0McekfVz9uZjtCh8mZLW6V9BxcfkSPNE/G4Ys4+6JsruBmDU0xpivcrz2OjUpxYBpSprwid+w2xXOAtqjTfZ7wfpiZx8bHJByruz/EdzUtQ+06MkHqjzIQiAyVttgpTKDaFxk4mp7oOjUhfFGK/MluIrgdPf/h6uomoWAkx7Au+pdif9C08DpDGxl5XTdVW3JjcmJWX7dP2Ue8eV4Ne0aBDSu4WwPhT1X/Ca8VfCX057XulRlWqWz6VcUGr8POrr4AaCBVPZLM4yTH5mBfOmqD1ZVgbJPViPxJ1hEwe3QKTEn2Hb/R40ig8j/60Bm4hDWwjVjrv1WoRJh0xYnsajyrlmFeFRRUYMK5wP50W0OtrfU7j4jTWuTbkXqWd4unf86EBQpCZrfqOf/MES0/tt8Ih29cOOqHpuWRI0qJ5u0s5oLcacDvDOvu+gPtjbZMuNo6IEE2++b+jbCoespTKbNygCqU/tpNIRfxaMdDH55m3Fb8ghHsimQ4rZ7Dx8xV3fS/iwTo56efe2hZGBOYVCnlv1OQzAaGTaXt1op9c+m7Fr1PRaWt2+obY+ZnvgbWDHkQRhhEq85WVIOApXFdrwAKGHyLKD1bO2nH3hy8K0i0WKODblpasBDYySLGK5i9GpnpevsGqfMQeQE1gXI3mNWpwQ1tegixI1MS9K+FgZwJkEzZzFoiqBCeaUoZWWUX+zYV1MHfJDNQBqOKoqwznN+0g/OpQKvl4gU7A9eAVLvT2FSvg3+gkXmbF8789yww/bhZfMBZGIi4vkwDOl/Dj+uCS0u1RLmfHZ4AzqbC3Z+wq98kHt9IjyGjNUfVQ4x+WAXY0rbhhc65BWS7MiIgGNy/cRjjyUju8H0htwSYSMdgIurqeVficC1Cw68qWSmnkW8WTPKcNj1n8YuLK9QC8wCONDEZHtbfYvDCk7JtGOOhSgXXehGBJhbCa8AysajpwpC0jDg5iIsxgq4XFEd433wtcKaEVd4nB5EeWTu3iatjQm29sNvEQQqUlSuF4od3lb9pypZZ11PG7B/7Zt+L+EyD8eFR8ie49yPYMyHNSL91IfBkXSB6b+lyqS8lfBQwqQg3hZC+acIQ0Ly3+OsV2XWBQAHVDHTn9c22GFASy0DCYnQlSb4uYwJZjdpNkNv4zDLqVX0ubQcrvpPip+gQXCbRk/VodSXP/345SMHhewTnoKu8TI3/6NbaH95JQHcc+Fv9fLjWubVK9GU1w/4uElN+hNqhEqa5lZdQCpbUlALBRMI6pI5EedHv+LdpbHhwRsInhjqCz7abKOLnk66rC1yPuY1KIvxrkJcVOOl2cB6f1wxp16tGeIXzItSCpFJfAy85ch2hKbDmaoqdw/lov27T77USCUgxWUWobwPEv7fdIYwu2NHC6EzusvpdHAbRKZFbPkRKo1bEB5Ys+1TIi434ymuA5l4QGUNuWuzqlochkjSnKcMekaBiehvx1/GHuCG9d6Iv13fDUGrgNCclx4qe9QckPMhGqJ2H7fxrffnr60Kvh/fQqhIKLvrOk5Ud3AmnLBo5rVaDrbUhyXa1Out8R67JueuzKyNGyH8ajwSvuxyHWSaypwTKftYN0CEc1vSamL38pBhGZOBRRmpdWhzepPejjCxurA3gkGbi10juNpNXfsOpbA6lhGzGpiJW9lTn5sNbauA5Vfeb9t+aLLRH8LwoKRPLkqWImklFfaA3++ehcvVy+kS6wgsalbccooUXTTASDbsmRBomWq8IG/8GGPpFl+RNoDnE5ygBhKMBBu8zJVwnafFo6BaZ1vK1VIqiQgfanOorJPP/mOXxEEx4EF0XyU9S8AGQbRwz8Pte4OFuNTcbaDO31RfTr2tC3Xa0V6yihI+XdLjTpfVklBOxn0cV7aHPnIW1jpY3Z2KsBSE75g2+L+iD+b/ov7nnKzmDII/rYkKZ1YBRqKPXw911VDOSH4cIBKxYhMPbw/hZVct+MD50TmEbJ/7Rks0nO0D1BJMv0ptx/TZBjrpd09HwMcxJnB6Mubd/7fmk+RpG2xNnea9lMuf4FXKPIrEzV4/IqGX++QBgUmKVPmbUJkkmB5ceXcspi+DDctZbm6QDMbxcwz9LtjHDwBo54fi0vR+SHsbVLxjkhX5vnm6wDHRm6boAChLMitwkLrF1Vv7mB3UK+O5jNIyD7FbilOpuqq8wlmZtJF4NA9KVlwoTsBtejMu9Ge1w3Rj5VDzuEqGqXMbVhvhEUFelzLnberZB+KkRLGkFua8aTAkxZLLqiMh74p6WQ2qnbunnOj+VIUX21YyDuyENmhNbVjvAcpiNUutqUDVoUr9yw62vLQa0Iy25zX+QrBQLP1o5tV0MaiBxL7z0TH51HUGALsCNMRS25JwnSAiOoi1qWq6asKM1OryDO/3pLjYw1TpfatqA4HpRRzst9U8DSyriwcgosjV9R2bDC1F4aDFj1Bu8EhFABtWY/JeQicJ5L4aJPhIwmOtSuMfCGQmSmPjaAqZCH9Dnl32EQMuamgOwKb6LlbxWDmSUk1Bt3E34IHhYXLNfmdpyDkOipq5iPtU2/hQaq497tI24A4HvsJWoqz1wFtjckJgElGVDs9OcTNqAQ8nSH6NfXiS/4DDTw2kO+GBX6wjMv6BsiOFzcfCxA1gnTb25RVVBgBYArQey/kDVj/ycBDg2QAtunmPEp7LdyqpV7vo3kL/0sl1/bwy7c3Cd98RZoUnEWUAAF50GAfKB6fOfSvEj3Ffs4m4XKlXH/3yC3A6Tw0m92pBdbTDB+OW6B7tsBsrjo5b3ctQm8y+tBMrMGRadFsXVJb+VAbvNtma18D/sSv7Od5kEyunz0AWWnIAo5d92aF1Po9qFRqI2BDwVNrxIi3FoiR3XK0bqV+a6M8Rb+0V19XoGMO16msxGFbOExxpE2qV4riyvvyH7Wixe5yPsPEymqwJaK0oZZo7p6DozaSUQr+dogrb6SXeWe0JD1Q6pRJmy/w8QGSVQIj7I+9QRaFJL8GWq3ZpfmBN6Z/wqB0sha/eIX0y/b7nDHZEFP3NKGGnYt6grJhDMqAoVqel17wTGMVJyx3CFrbvf10wFdUPwbe4gsuKEP6NLmhNd8mbrwXM9jWBEMouVelnMKHsl16szetNdEtx9SShJ0WoKST/tacFsiO09WFd3MLltV+w+v4/yb2ceXgJ7eB24aBMumqY5SEXDPQaCGgSUq1kbwBeCf2sLbXrmfGIWQr6Yzm0rzSVHq2uKN76CV3UeH8J8aPJDBYEeFGgZMzAwXu1RQ3zdWehl9Y0GwsmvbsBiwtm1SUxDsuEgoazsRnf0W9nwR9tkoWRsmpt8FGQL9LwM/5Hult3GvPH3M4WbynSJpVWbWeR7EsYTNMMK0zoafZH1iobI7ELbBGbDad9ryUie0W7Vgg8ImXgj6IvZobp3uU8SzOv+F5Qclgk8Wa5gDDWaTD2sfzLQN8UFsZHc8LjI1j9T9KxoK6AU1jd6wrR7y/PD7GGVJde4eKJZDsreJvupSjRuRQTfZOVCUwqyqDHo8TQnkD55sFkmeQUhGUAjfbCFMXcEjX8wbluEhap6k2wdESeZaWMahFCucAS8cch70TDkUG6kFRj3A4Yq5XM6u6DP3YIdnjfirhILsJliuatLApkqdRFFhZpPmVTnzh+62G6P8q9/PxytdUpdxz4Gn1s6sTOkXC1L3QaU+Nj/6HUtbiGBpah8YBCKgmILJakuZ3zdFIOoyyK6UWxU0VHEwLGe4THtVAcRm4aodv9x5OBX33YZMy8N+/FG3Kn6z+8svOsz6BMyZGKHZRVulbx7gBNH1FEIzhZUjYRi6b8p3DoV0CyrDSdDNn7XsZLABYaAfaXFQAASxlYTdPNZvzlbXH2tkYKhj7FTC1xSs7g02JWBJpsRhchTN8h+aA1sZQqKa3q9nV2bMRkMR+ECAAJ9y74LluKkB0JO8/gNItvfdUwtIG58ce0P48J6bIHVPVJkcrZZncjImfxicXzz+/ch0D+wMQAK2mKcPBd3Jix4CSZSQfJuG6eRWz/pTXRbWZ/lQlD8Se4+tsoS6ND1RPrFmWqKH2EBXLx6Ds2ILXrOsGhmeBmTtKlhHBe8HUWaNQ+YU0HH1/MUYCoxkrYO322xxiE9PrSXtipKiXRELLWykl7X2nfLjnO58LoraKh+t0vUkmdHp+qg8fRg4t5cF+CcSXOlo3ss7kX+uOfoRUo+dPiZlvD2gC/bfPFLoGPpdAEG57ACDQ69KqJfPE2e/z0C9x+W1pl2AFfSq9AW5qoGnFAEPqpTtGAOZ2Drmp8UekAGVfCSXH+T+bWmUSKQ1EPDBdhX6f58QEs82osNnBmGxbQaOZOuPYgNzI9wGD+6ehrPQnXARjKusP1SceNPCFizaaB97F5iXSjC1cOc1+n5mxeS5ZJOEGg1FFowpTEZQJiYQQ8JltdBlC7taKeAHX6bsLV8ddghu9eNXWI4TKKtzbVV66D7IO+LCwYw7CpgtZI/1WxjgRG2DMK0stiqWD+8R8e2K4vB4s8xBHOlNlCgAhdJXwRDw4tFhAXbSaehhzTvhnr4AcQASGsWMFRVRQvbsx48XvpnkJG9ZShjY4Dwnf2L3ehwKl7NFYx1MC9O+elakO1zK0bmApWATvsi402ngm5AvKGVjo2RfJneGBUH/bxpXiv21/cuk6YikCG0oS8+CdbdTmwIJ88FDEo1/5U+mvEsL0ZS8Rjk2L/PPwG2ukN7b4rxHuPFATvO614kZvLLQZV5tWS3c0E5EnSDguZ4Eb2i1b4s9/O8X5yXhGmfwvwUevLbL+A32dvDqO59kyHT/js6bE25j9QQzYXArl0kNYalF+RKdF4uVBS/yvSa2WtPIbQsc75cYPgyUf+LLFSJqZTl389VJiUnGK6qbzzL3YXo6Eiv09dJfVqdhesbpATDD7xw5iH+IFOAzmTrQf64a5Qr4gxpZ+T6dwc+e4fFacdILjKOQD7HY2z9wBVtL/aClq9MpWHhBGmdPQjgPBw/VTAN7TEAzDcgn4WJGEj3mehKc2xl/TDa2Wa0e66fpBzsj0Y/o6ZvXCq0+A9cfoe9DaddWP7EJ/f5YkYJaDbv+Af+Og9Ln4llHZqG819++kb8JclGJAc6GC7xOcEWkOSFbfm06x9ENeZtbDOZGkYNTpjcPRAzHufVDsP8JTF47venIZfowslOcDhMbJq9plHje/BTQbdZoge2+rBBwh5FPjAUFRt7O3h9hr0XRCRTFqEa8TZlS7zzr4whfvKsmLzERR5yrZZ14RvFvhCrKNjpzzHprTicd4/h5cBrotIXTzpXdiNj07tblFjKWGJtcYB2YFG94XjAQJVqMKGDd7n1KKpRu2rMu2HgRICnYCABGjg2DV4dCOxvEgtuk5iHImPDyY5CkUa5C7oXGIq7k5bI1itMLJiXbWrVzruR2xz09XLeAvfA/3WixIJB3Zd3EcaYLud424JH8AG3sDDwyf9v3f4SKwWS/512R8WhRMfg0T7ODtESkJ3uh9GMZ/vcib4B3S60pdnR5Fbp00BGsqlsghGMEPbA7O45+FcGbJZBzlZtyteg/4Q1CPcem1eNDBPdl39MRCPpgRVGIM21JvzAOGReRPW/YRz3nMHMQ67eqH3k/gA5ZG7yDIns3I95CMVbhfvxnCuKA+raakO0NMBifHb58a29TZVVhJFISpV6Auo/bxcbs7s0caJkN2WMs1/TyfqctyCJ/WxP7J++KHNSrJbJUIqjQ/l5Dw0XmTew7zWvLznudtjynzvKIIexev9BA8Zcuc+PFa7s9R19OHs6lkK79/n+/DR9Ew7TJ7eZt4vMx/Nzhzt+lsNiKXz5fTZpLp4IaP8HgzA2HX/5qlV4s16A8nLW2ge9JOvIhtXRbNupxkt6HBC+Q2Eh0Zsujy8g8iW61F4YiyHAn+un4H10yDTZ7VF/Bqt+Ekf420cLbmA0EhZfnwHU958PW2OWgndhBzpUevpMoT1R7XFPvmfjoHxvRkvzqLvSIR2tgK9ijfHz56NbmC+J5v6f7pR4Q0r41ASqXkgE/CHwVrtvoUvUkRG41M4+L/U9y/6lC22zOnGP18jrPTuoY6r/xSrFGmYeeQBHDhdBc85FvZ+46ucySKaYb/B8iApf91/skIknEWmi+cKl+NV9zi3rMZ2kPaDBfLHVeKhPadooMpb4VPCd32saA3DHhIRsMljQUaqP2RImUKEN54m5AFmJ6fXdbRB2vaC6ggJoukzAOcFCGXCLe2S/h+FpOuePU5rOZqauz07JjfXWoiF/9qX1ALSkgVuKgAAgYycbjSkRa7HK4+Yo55iUvRaXJ1m2UhOuyX9ogo+bvLeEYNZX0ifFXbrGq5hEXzgtwJcru+v1Lsp6ZO0aWjZ840Qz8Qtm0NqB1otzhRNvU/G+oN5IZXXb05V6YGa75KJyXscK7ehd/9HjWvqxXNgD34tRpxslD+CzSUqJQUMTdsl2Jfm1lQQaSo0MqWVp0/3sfpLsyovZVKFKU5OpMhrJGnJVSKeUeoxI6oXLWT8i/NwtnhegqzIyvn+k/IqDB8qRLfv1ItMCXeW8pLNhM2XVX6nYcsRls1CEVXaqTYEIqTY48ex4XCUco+/Eyu1uBqlZvZs0vWTC/VdU+fYphb7lzWe8gczopD+LpsXolk6uY2CYHbitiE/scxfCNofeNYAjORErUouCUZSb8tYhQ9qWjDaaf1p/VuIRpxoG74tJOMWeEhpgdYabaeQmEA8kCerxsVs+Zy7uadf1zdTH5DrW7U+qQb+KSR/bXEqxa7omKIWHACl0jnrntvt6ndMEwkT7FLL8xva9gsNfJVvqnrdcuWlD6a3fapBO6yHiDJ7YpRDIkbcDrAr7kzu+0N6iSVyq6qM19DkX2AZCwojlV1OWr3ZA/evM2PUX+LHsYJ/XJqjy2TvtvlDBO5aUfwU3D7jtIDOwzyK8rM+cG6gAA0LxSCkHT82fFJhoHEtsGs8sNmivgI+/ZtW6NmDxrpZReGXf4ozlI4PyFcVmDz5Cec9fpkIzujFRDwBW9smC+LbKQpvfOJW7lmEnJXqSqb56qr8yt2RqY4diy1eLUuJt6B9SbDAiCSzCEM4iAd32KBqZ8VS+42jP1Sp4foqAmsprGc9GTUW+X74WYG2X5jbaVZC2CZ8CZGZC459wecObSpLlSYnM7B2S07aqmvJl3axfomMMpdR3l34k0ZJOPUzQccLM57qF2/w4buHUFl0bJSHOChL5KwJ5OnHa7qrsHvmpoJY8Q8IHUMO1hshr+ruvUoNPErEVBPyhozTNFC3RkpezVIvErXn4/GkhewxAbRZK2O6MXYsQOn6UjalSHbM+PF/gas5ugy5fp1VjfnVgEOwaSJzBhZxhvRbr01iQ/9QxfNYDsbu4y9borLdqufbpwxb66ggmQUJTBl6V0FsR15XQD80PqRp1rgP5B5u4aQsgwWbzBTKFzm8Vki9lzCRvMCwjHA4tWrv+Ac882Ch1sd0K3cRtpha4sYlfsWSVWR4KEazFpr2btPvsI2pdJ01TAB5BAqch6uU+OCNyCj1Npl9LD5s/HwEiLv4GDt/TN7aFhcJsZLpOwoHVJFmYtJ3RZAqKomPiOuMt/SCrCsir03hyh1xR/JcK2ThvhMbtjyEX0zdi/4NpcfKblZADSPFs+TubhAE+SWQPbdTwUOfzjfCj4QPCk9iMeUeHjVRXjCvNOvuemXRVxJP/Bqxmfn1bA1E2Qv4q1GbVPbF++qhC1OyOsEeXeJIQcX65d96w6KR4DepmIcYspEiAyOlhvv2mRnxWVV0mJdpZSXxvC3QdQ2lC+pQXS5MvMzkrHx0kJ8ibct2odzE4XIhW17TjNS50nqXzvGoIsiYjSgOF97MoLa6K9kMbtW0p3aWiLsOyjmGpTlte+5h5vOM8RBf7uk9hI0q/0S3H7Ia2hiQUh0teJnFTxXrk8b6Y4eAFOTIexJANdHn9PKiVM/428n+2AwnWfA78cKQ5SYwhURbw+0HmJPNcIT17exZH7SmgilrkiMkNNJFIiZqlR26wCuCcrHHmJmy3UXQaVTB5NFeP2QT2ggKAO4EcAHzut66cJoMcsP/d1VwjLJ87tAHQjGdPnk1Nbzi9FczMmAGUrtO4yFR60XS1IrOeo7K16Ncy8rY256y7j0ncXQfT7jvomtSxmoS+wAOpSY9N/ED7pZdcrKUvtSgzDOFdVGwiLUZKM88igKBG4lAitWOlOOKpRYk/yn9w6YfkyNWv56Q1cpVzpUYt4baXCJPhWdG8Gu6k1DU76BcVNGYLd5b23ZTwcgA48tsewjXyLk/vmxwCvobDBYK7shQVokhVanuP8d6UPWsKrc+0MlxP2fURcH6++s1K0WFsvxOpXlrx3BCM9BKk4M8jqCCzwiv8MUi1MA676XGVx5T+lz4reKyG7JOzrDmxbx6X9MuhzYlhKjRl8v8xjrI3hP7BThjJA9YHzQ/1IJe/CGUabuf5rg6uMbAuLQLecZuSsTBPWVoUjGVdVKQ6N6DeJjqbeXuKKzd3u3JI5l2c/++2v3YMcIqg/Rt2u1CtMjfX0SmJ8d6JriDUXqAJ5R5pFoqOtGbGBOzX2Nk9v3YZNFfYsLxq97AUYeG2QWOy3m3BRmbChKTqO1iD5Myczht03koCh86xKgArPgG3gDCVv/jifpKQffa8Usm211p1aWvYSoO3CVKBbyuHUfWJGLsARB9qKq/adrJz3EGIfXIz5WnHg98pBRWEREB6Z/7ta+mj8PYy2MMaczltL+pIXZv7huvzB85iI0xTae5b1hnLmMU9gPbX1Qfk3smKbf5hChDWNwilzwipEZlAo5YRmAeoRIVmPBz40aSojlAqg6TPofe5AAjlEoPCUAAFze6YK+yqIhYBcdP6yJ/nwpYn90tbc7Csy/IGq66mp7weaCWwzmekfkRZrp1+1YCD2kzTAhfnGmWY1MeG2CqE5uZZH6Yf3h1WV+Ti2iVLZG1oazeDQk63h47PoHCgZEiVSn+apoogw34EtJQsoPIIAvYPyDKyifzKHmXFo5MtsWp3NjVAZWVp9t3kN4vH0mxLA73kOnVo9iBAkwJBkEkGV0epEzUNmfe6gWLgCZ4+Yj/S+dTAUTjZOm0LxXbUkdIiXA8Hq9Er0LFRdj5Un9F7mnWdNoPmfVZo/dfseRCO2wRhX3W8hsIT94XhPDZjp65vkBunm6UFq/uhUrsk/Cnp//j4Lj8LT9nASzlVQXJ7QTqkTkgZc/JmZnz4YnPNFlQ4RPctSYYY/vN+Uyt0gFy7KB80DEBtHWp7IZWY90ovkwpAOMCISZZdjqnt9ZN1S+IUqeqyC5EYIcyuedphNFSuMO++7PhgxpPF0kCQ+saer01npuA0pAM6izJCh+i1Tot1YF+wfFCjwWek+q4B38m+5au6WPGNErt24rWU605zgAmMo2GlFHCeFiZlXbqMop8oJ5tmi/6zHLJC8dRmDJS1q/k6IDR15Rf+rfqsz4iB5fQO6w0h7ErEZFooTRK+/9srEFrI8F0BtKR1yxz5iR7VjHvzCeXmOt/Iuiv1K1DUNvRW/vlUt3DZdxVUlADo9qc4M6c8Cw7OjwK7mfDr+sFqFdQZQnBDuDhnmgNIqmTLGhtqHRz8gJHkCSgOmiJzeLCwXpwIh/FLAr+DGu/APPn/BsHGAZhZui1L/d4nO7JYGlpFOff8hFbKCzRC+gbWuCJshkhO5fWoTBVSh6fCdtR61tfp5mGmF8+tYB2dCKfcmoK637l3c3QADlxxoLc0IBwppU3iF44W1l2/+icaEsUPizRiAWUFTmHoV9VjKrp1zpAIMzpmgbwUJvjPUNLsPJHX348Upyn+38dJxZzNCqbaA0vTM7EeE9O0pqDpeg9frf2OQkAzleIAW0gtZU3LsQhEcz3+tqSQ1uEHIP97aGs6zpEiaMCoSnbrP4hEmuzaHoDj+im5o3+SYT3mwLJHIYJBBGdXkQy3ZCZXhrzXq+lzdDSawtaHOIPT5Emhk4KB7O1R++5xCYrWxTpUJZX4WLy0Tv9aFNHnPZBpOYIisSmWO49Xqrc9Tz2kD6ACcu0UFcxFA5duIHZcpui5N2N5zm9DLnKihKrZXV/486/2eg0qtIUm/RwD2+G5DyMnnSoGrbbqPQWG4IJ93VjpJ+HnRa/aoqKXm3I9uwsXLjvqFclAPiKKhHOPknQ0YIkSoKBpgrmfYVfCvSQykUv7lu1SL4Msu41fJBqipt1OlJsaBemkigjGlu5newxNhgxXd48j4gx0Gfnqfvjki5bSfIHoUIz7jKKIRTt4VhsRb92QT5GSQmkuZOliuD1WV4iTB+ZXIEcEe4IOemrXIGXEvfspRt2vHAr44XNZGdl9gZo080fuFbyR2L9IhHMLvMmTOq4ibHdhcKF2uGMi/VhJWm2YYZPbtF/WGEVUQDgXn71ztu3tB3PJQgXbnvprxpWp/0UxkA8C2m1ACtrtIaLe0COBkL4jJhY74Fe6YDP9h8jnckxv0CqU2q5u2WZWbqAVebUM2EHnQbLDuGWtY9/HYBdvsnE073Hc89hWuhfRe6N9PF50PANONC54/C7sNpGklT3aAi57CcThYmuTGpJ9DvmvknzjpTh69Eb2GZwwX9+6Dbh+UQ/LkiM98pdgzx+BJfbkMQP0zoqJ2bnEie+whbDeuggvsLV3A/2ivkrVfFV+6zdR4K7mO55UBJFVuiq8ZW+GdJ63HbjnoApaAFl7aqkWZuWqXYqF+/I4VvvKVkz8mhz3lkAUQncpn7dLJDC+SHPvmgF/hh41qDlERO3F4dPnpYegJ9nr6+BSN0LlLrdFnxNETvHyqATIKrAGHZNW+OwTMbQrblrUSP2uScJ3k51qunDrlMQkq57x50hQsdA+jMGP8ZF6f0wJmDGq5/k1fAZhAX70g7cZ2n0QAUr+nmPfu8XIdi50WJ4kBpVRU9OaYm4bnFjHa5GDujkKCebf6ho2+cnvzySUTHHletJwsbMu7Ciquq8Uyp7i+uqqouj1f109Cvk2MThYw/JCLJVASfQYJgmfrqgSW2bNA+K3cGyAy4zazpImCOxkI5F43ixE6fRlFYJhfo9iYbFk3GwuX/Ue/Ahrx4EGXWCtom8BgeHZLgu814iVbZ+Al5ilCquktycABJ4MmSqIIEbC9+dSG4I9yHY9U+QaDKe8wWOPwY3WmzTotN2KGtw9KU9qU60DIbx/rmllKGpnM1/hx9/uRcsLVXI8+PkpVw5QGBch47N5wnpgvb/CQIVAuZIVXURhbGXOtjmGryV28jb9gkALW1SGW4gQn9cEmW+rGfR1kNx1gyLFcH7VgmXCesxaOiql5DH1FNOVWalGWXs8IhBWyYdFjS1fUlEjaig1AF5ZCkvqDr2flZXWE3P+uSPVRaywXN0BUi/wMKuHyMZ0ZOnooUobk3ijYCnLCz9bjfzgPFeAr/LuOq/kJ6r7m4Rf2tA4XQg4lVc1o1P/+zXnT7Qs/SVzgT6iZiQeYvc61yY6+LCcfs3hNctMvGp3UPv9offR6k7vtif46GFH0yvAnERjUzGmqw97XdOHDgjzHzpbaIcf3uIrM4o+bPmgexhHlWxKtmXbEakb+DlYhQ19eLSGIeG5RvSZtcVB43dHH+sFGrTgo3yHhQiD20KcpMJrdV7t6EbVjFYEZnLvyxo4G1t8rxwPDUyiT0GVVW63D8Mk3ReUdB+cN2XWf0ktmANbEirWAJzZcVTA1ByW67BkVnqNjA8U3wDYayNw4hUbhN79SdX2Ta7qrcv8FkUwC2n3ei9xprfrsiOR3ScbnMv989ex5IH4kkTSZPeE5jmEog7ApfmWU4G34TwtbUOCloaCVzM7cMnjQSibx10Rgf8TuaC3d+rD8fy74WBS8jQ4Bd1SJOr45jBNo+9blMtUjFeFBb6WV5KKOoZzMQNMCpQzFCQyIs2kQJwWgqanUq/BCyMJ14lTwJTNWcCKHG4ZLAJj8RgfFGMyWckKB6bI8AbHkl2BDs3zpx8djZvHVWkp/vTw6vSRsVlsAnnQekkdes5Rc5Jh4b4V4JITIL9jzQ4+kU+vdbIC9jjmSFrsrtw8z6BwZZgA5KVC+B5bPEvtumQDEdaLaw/IV+m/AhwwKpVPdXhj/FivuNoGTkCje3ajDyqFxM1nskJh4b9RCRixpXFgedAhrWlYQ03HwPp6O3s6kp7/oEtKd1TMLcC7GxASyWO5MY/SGidhQz9Qjk1M9qr0ebHX7UsT/qNTUuH+DzIGnFwtc+1y+VgZBBIY42nA5Wo1IWtssNJsXRgtcpjj0I7+7TN/rjlHG3TlAZ6nI/m39qan8oNFSnbgkG99FBh9a7qoAy7HQ8PhVuUp3Es4lUmQ1D16vqpfAuMp1WX1j/26fyLhUsIw3XnfHYrzMdqHV/HNEzb/q8PIHPrx1W6MtOoj1UHvvEan9wXb002WgYctZBcpjUHg1Qq9wEBNY3cbn8gQ0y5ZasvsCFFCUHYdS0PYEoRyyZdPCDhjZOPGHRGfr3qqNDvqj9XjqyIwizBPM1nHhT6bSioCikDhG8P8XhTeExtuXopuDAIe1dmz1BcJ332he+vwiDuSaV6IuMUTn2KMgbRM7ap8OgZhj/JRwhUDN3zglMROVm+hkEqwMMDZbYKx3w5+ObsLlbzg887vy+jw6k2r1fg2rXVOBMsQ199418vwxi4tRCPs0nBF8Yd3IutfWvaiSi7NJR3omtSctLfxTP86wJZKbuks9C1CMk9vbTNZHT1hanHLadWT/p3NUL3W/szz03QG3h4QyRsNIMrPPK12ye/MspiFwHS7tRRkFxUyC4yxi2noorpGhuzjnskKgpDaPc+3brnWgm5ZJgTWdzd10Ok/+gCytFm/0lww6N2pteF1kkv2O9TtwsKr/cmyAY5gMHNs7wIVSt1YWn74EZCYi7LmbNP9mPXQ78sso/dpPWftzLD9UXVC/EoGFph2JAKTmcXJPO3tPe+KIip6IURP6YgTssNjoJLx6Mz97tBik19GIKrBAW2lfFFULcgksgqq1ne+nkqUhnxgBRdjASXAARxPTMV4+lEkrRMhovB51gZEF50i7996gDEEcVIPkITbkdvjfKFXRGQgl36gf2jrAuBmwBtFoVIT5Q0cZmg7Ge0GsOY/ty5TDVYQrIK+H6bG3n5zpJr0GLTy7rDTD7dpGfReWsS2EbVqKZnNDWD5yAHHBde4AvLM9s8I3wNSmRtfnJvLeCP0I4P0SjmCbvhzCt9s+n40BcVIjCk3liI8fUEXMDHA5WL83GgEnh3PoQXCOA8/D08sSFDYGu9Gz+fcXwRu2g5gkMJiueSKfJRgMcIl6sevGpxlqisZFWm77PQzjKmsx0IX2DKT0YnsU1mbn0klaJdTrmwwCDiKFVzqApjF7YuFsvdfsEbJCBB+a/HBp/z9pSs53szuf/59Vabih12sEt4P66j57WDVakRVh7m940W1eb7O2X/nJfhx+8MZUFBmZlM+Q8Pdr/WvD84X9f1p3XQLlUztGkyVDzM09TuvaOcT/kw1j/sIvwAeplbHcjTfywXN4EVTtSnhqFvek68MLFjyFjhJSGYs+tLBQInXX2SJUjJb72AADjkhXnjTnuRWSo9DAQ4hMZW8iOD2g+k87eXst5XmkKIHowt6wuiO5P8wm8RnaPT04hPjpnZJgnBEOaP0/BtwnazcSsq76wvjRSsl1hLjKQou84Q38pU9tRQe21QkvOVBaeA7wGhax+ejtCNbR+Gk0yozocADz5U6Vemh36leOlHVU9ls1cfic5ahPPQvDoIHp/OLgVwjCoAHeWAAUxyEdlTGiUD4DZP2UP0c4Zxm5QXGPUSIYwReEmHwAXMz5IUfL/OmrLmBnvLVPiMb2VY5Gdr5AYIPWx/HXdoyk7AtkL6qsHCA+Ea2HO9+LwtOxpw6P063oyRx3n4LxYVCsTOrer7SA/Yl0a1yJiHNiVPJKAt+oTbgN+pGbWTlXdssRCevjj2OlgzL7djesw5Q+FchOK6sgof2CNsIYeIByUmEFgFmLyeO6M7+IEJbNOSm7W10sBiQZmIlmSTg2Bi2NvCfkEFdPSIN9j86+p59MGcFkMlTzQZurhq4H/Fy4Q67eS762J26YTG9ArJSTkzO3T6QUGmovGUnaFHChbEL+/uwpqJwUUfOKD1v8Zm8BXCm6QaHe8lgpBH+vWVEQH/SUPzqncZTfJxuN/MiqeSZXp9PVR9Nh1Lbuq1XfVJF82T+IgNO0ygPtY48NdaK0L8hMZKSeS9uMP0xgBK/ABJTmA9lXXMG4uAZZQWKQ/oRhZXbloslAHXwTIfb5Fhp3QOgvmaUVqWsOZlnWEjw37VXg6rb4h13xKwlPACDp73Z3ruhOn1AJ16ltIG2CYmIIqg8Hg/sSIiCmuOPOoZEmkYrww4IYfOkmC9GG2Oj4UChqw984Z4wzYSLVwSbegalr1CSRF80KbeDlywol/vG6W1vKdEOTwBG7PhvKUT12QTi+wAXO4HX39kLrL6k7vZc4YvR4NO+hcpELYouHs54uv9lt0dTahO0qQS634/5JstULBLIGEb5JoN/9uU0PWElxH/VuQ1Ag+kVOk5lZpo4rPxlV3Z1kFhb8hCYxMWmetc4ogcI+8XPlghk/xGsrDRyOKtUYkizZuzQGho2zBQeB7S3zzFdCpKVMMv0kink5KP6uAmN8isG2eft+viuHbEkf1THxuN1U2Z0XZcP69qC7HGlESbVJqw1tfzgIva6fTKXUs0PdIkhJ+cYbzEO1ooWJeje0IVg6G7+KRnLF+WdGwLYOOKkweVi+pU7I6FvSlQiwvZaMzoD75ZVLoGoku4bpbIKBAeNRhKvVJANuhPckhJ6UFD6BXmXRJ+wqxjBBLLrdaxp61r6sDaSGW8ADyZZpfjiMBSchOPRNJ55A2I77xaAdSfgrIkyerPbUzkWMYiYLBAqefUVurYSrFLRYHI4JsV9zB0vzJxUHmqlT0aMWgCEdvKRn5Y6llMNHDOcIm1QvV0sbACcTlKtmm67stFRyFDqvwlDO10TGvtuzx68kO+wLHJzQ8SVuk2bGCr15+J/5iII+3R4S585B427SwVirIEb9wBFuw/gPR4e3+u1hjZI/a1Gl618K8VFhq0TpHMt+T0Uk+o8FLLVOaRvNX/PhFmOvO+xPmnYfmRjJdG99C8j5S64hMAAaRP9NPwX5k6hrWmfDtc3Ut5/6ZCy3gHpUgq8Tqt66x2bykcHpbx2r5pXWJu5Nfpm+7LPZjIsEg5Z913iBCdBoimuumBY0HuDbSGbtmXrzpPUfLvsW5/c3lmmvAfwW0S2K273e8RgCZJV8Igu0J1V3MjaJmBYcbpeGpu/LA7c174bUcBfFw0KQ5ZABtxIC0xyKlbV8ouhzosmA3+ZGK4fJFPvzkQ7IwauUuAqV7/+GNJ8Tb5MDLsUMj/T/FyaFonBYz7U0N5qN3BSTueZZZ0Lu0VNVoVxtZWGIPfunz4SxxZ1nOSY1fe46FrJy68n7Q9i3n3NAS3GPaIThI7njw3hsEIK4LZM0gqt2rewBPpEsryJykiPBALYRhXUp1PY7k8iWA4byFJaLMb8akuPdBPkhZULt53GpmprwI5sAqyV7r3bTNMP4+nPvInlMSSNAGHi6ZfJvjoSKSGKGK0aatgiX8SnIZK3UsKwDZVKRKoTPA0Z294qY/eGKIfXdiA0cduPuH6iGPXGw7HjCFMRZA7EbCnH5+hxXmU0fneNXzmvXPtPr7RSwPD+RRyCbqURzwqNwm0qx6aqZLJv2JRNG7tWsIue1pRgRT3tpikrLiWs1e+BtXMzeUTeXhkBJMUeyiAkkQwm42V2meeEoTkzGDBpXapuMGg5TI37iCTY/ChZ/qmmU5TFJ+MISu3Syeh0S+lJGhLZSYUMyWjemdnGbAaycwKwhjvj33pqZQz+Ox9DuPESjrjUKUpk7fUG51XIEAZZitFTKCyhS8LIxCzDU3W77bEY4/S6u8Vh+h1kokuPsM6SmTcebtiqS7FDCkqH7thSPMsAONCdZBCAM4y6xg044clNSukIVMhQ3wpnLjwd2xZqfNnU5Efj9MN/RhlKdoMebm3ZBZRhZrL/8Xk687FRIK+eg2CFpv84t8e5t/fAIbpDhzx7VlEmRjhSLtAZMhs0mTOxxjwDBfsQo0PY3nn5XeyR0ZHx+jBLM8qPjDiEX5B86OW8tU9C1BoCBoiw9SpgINFDlrkn9ZWfU/zyDKvYa+FdEMWuX8/W768US7nvKAM29afc5Tf42ghVEeEHN6satxFVcADhR0aiFr0FOfcNqQVSP2iVGjZPwqTiY9J8wZpq9Z2lI5O0dfd4XbMF3O1CI6YHOA61Ek0W/FVJgRdXNAOut8lrFePs9fpuoIYmAhoBeWBwNc7PLnNYjJQCZD0yvAo/HpwR4sOJ4TXY2DLoDmP91WL43Ta2IGRSCnf8ZGnXDqnme/aKqV1tmZJqepIZ/ZO5Ggant8wc8eOHBDfymagjWbYShPzJvvA0zhXacUaxeP3/eLZJtwc1eirQIK/+ugw7kjwE39Dmp4Z8ZoZy6M/fHxdRQhh5UV9pAfgBzBGyWkX+u5blAsFrnZkO9XystJEa1KnEcmbCMj5GPDT8a/8p8+rcOa56/IUFcvFMn4E+Oa+2YJ+4LYXMiCmAGF8SybIuZAi5d4eRWitLotv4Ze8fUUXeaA95w4WyENt+KIKCJSlXyv5VhXBLeLR0vCdNSizbP29JRYD6TghAubljm7kAv9iNuoYpphUSwD0tojvbjPHHpeIIMVtIvvYBNOgxaLQL1xaxrdAU+QXyTbYo4aMLD08GTQUWfb9fEJGNG1Ra0GD4/crXuFsC95Tek6XARCtBadztSkNEBMvJXTLDJYSiyBtpdaNdAHPxUmUbnoNVs5nECNIN/Wab91Jqd1YVViYLJaZmeJBtMrHb8ngL/MhE7M84tOX1z+8ErTcib3i5lO4YOmU7C7YvkrGNlcW2dhZ0CxN7GZ/U4E6rJeCl39GEsSZc7Bg+I3n7itAF8LlzDojldjyl8C30A8El0DGxkhSUgFsVIWKqTMUJeuT2jtGqaYGY5kJVgtNKvCaWH2atZtV4bAGEhTklsVBINWQSKc5XEM/kGZJkKjzulvi8UqRS+B5gYsssKzrq5qWjdCnwUafM1hCUHEzcre4/WgkplhOuN3DXhI8ysvr+J3tTiQmvqJrIRxDBW37N0qrdIdL6XqTSJDHj8pFlrIKgvmvUIagVLPrZ2OowTRacsJAUINqRqVqc6hs17CTl3ZizPTQNrGFPbF7rmEoNsHGVLxlBDmYAXV9VdxeX4y/idZGEaqwEWk2eTIr9w1DjLPCWXJR8xxeO0qJxXDFmBMnJ3/G52fPm28pA2aDu+N52IQOPo04kocWGwgDI5YzIyG46R8mwNeniScY5tTe5FU0Ud/e8X5MOmmDfIo/HLzt6VhfqDi+hkuqPDqn97knwFUzn65Ud1pJWvC3NccCLlFhNqb0l8C8am48VKtaqMiLF3XaXez/GIwJyQeOHrIMSj7Bb/venzMALT6WDxX2vNWvOg3uhQpYV0PaB+C6hbAILqgZUPCWr6ySzG58/YRInOYbwED6cHzy66J7Voh3SVKzr+z2NGIITQr0Z1gcrPHNPeWNn5/bxs3xYr7vUIlK/v/qQIV4uLlcIp67ZNPhHtZujbmYe35lRTFSjFHqaCa33uB+XVtUmHuGN/W+36OsS/Vh9kR2z5DcB1gyZOqlhZ0jY1s361H4PEyJGAGKAhoZC0a7x0+Gb6RobG1TStgHUNuyF1SD/OHDFy33UsjPkdMYuvEcQcQnj/CRHY3t8DeRzAKf7V7ASUZ9KZiI+eXbm8IKdYtsfPjhYvAbpxNscc2zElBgUAVskAWk4vhKNAraZBBiVjHU7jstB3YahmGXOCE9Qx3jpumKlVfWM+dCYd1C7BLE5L3ZiVqykTZCTwCR7aAA9LTZlSfCG+3Bn8txS4/ORlmWBp2riP431Ewv+Avbr14lrNAcYhr1uDlC/WDjlHk3klARp7ZiKRMdtIHMf6+1niHQ7ekquzaYhMbgL2NRo8r7S/6L+l0wvCm1ctcIJ6WeGJ4NVM5d688r+JG+92GZnqrMqEEndErAUUmOJe10ZmDGMvdI5bqMgGKls724LSygQRKL9s0+gRLxTWT9E4b7qU15q7fXFSdKQ0H3PpkI+ab5JpiJumre+EzgmMedRodQT5qXcj6WMrWwoNmV00kZkxGxGWIafO4GZIJEWs0yRwLW0p9bmqXI5+604eEBMzjnEekFAAJIyjgTjDdT3Y+uLGpxorV1CLiohVZMeLegFHawEKt94pLzYcostKRBVCDFvUryT0WSVejTwUQ+qv1VoiUsbPNBNzP4YQDHHrk1KQt0x0iVZV2am5PSFo426mtUkXjfTNz+XpACfibfBoCB9ham1SWmTxj13fOoUluWhrOo9BXoM+jkoyMxLRRQreToVkZpLIGRYcL3I9zWmJ7s02ySd8ZWJCdk/bzhZQV7vs9MXMDaE/tv+fGZRCisFTSuJoZgR1tkGan0KaY4iICZ5u0kwHDL4huVJ/kmwJPo8Qq10HfKec/NOkMGN3FmQZqa6INSpIijLb1OvCx7i78Ms/otOpUMOBRyHmOT2SFBBbX8IcvsvFO/T1yWV7u3K2ypHYbgMz/bzmSeMp0joK89tfTY67RuNho+d+ZSTXUjWpt1E8DBMUXOp/q8CSwAPWZI8zIWEjM5HgvbSZYxir3QmUo6Xm9h5acZCUieZZkzjyQMphp0gmklcrMA+RgaQUY8VWO3BIjtlYZgYbPJmUDHScbrnUn/SLQ7buqjPYA5P3xQrJWbZ/CIcrrKB1vuqDj5YbQd/jBokLNb9zvz2WxmWPa3eZKyum2Uaq1uP2wgdQ5pBGV3Pem9wWBB8db6S2b8Y52TjYdTEwnJ6zC2mqhS+gCzCqP7KiunaAgoNgUXMx0l7zhiAYBS1yvHzhQWO3tgC944dF1h+vK9ZjnkOuv8Fb0JlJ2Be4nG9T5xsZbuJ5deW/iTLx9M+KX9e+KYjHJSvRdpdgs+FwY/29JkSf5Td+BgF9CJLkjPaliL2oilJnYmJMTccEy/GHCcsF0bd8j7QdMhPsQRU+Zu1aoyuXOsRjt+2KgF5n5J49l55XaByr1ogrZqto2/DJbQTnb2ZoMx3W1NRS/TSuhDwa6bLw1AHXfluX1LVe4j2pn3CR8U95ARsCTpy08BSwK75pE+Tivg7mNMOEFG7ANHj1mjcfTL186Ia2AFUwLSyiQARs8AOijpH+wh4aIG4VijjjYLP3+QPHZoFXbzKYqsniVMaD/g0Ul5B0ifyN0F2txuD1JUY3CEhPkB9AhrHOOrIKojCyKtbDzrcgMqNlAjOvpW7KKHeuj2nPP7EKmSzzMW1T1iITgwzc5T+bFZHR0WUGJNM+VKdMufCC22XHP4kzWIdzlghZ2FUr/7RfkguzUm02CYK8x0ua3j/PzWmBC07YrflzbLawK6G5X9iZR2B39lTvVVKbDFqMrf/GnAGhIb1Y5urKLE5X+8kWYP7soz5+RcRpVcFoTXaQDqFPunhaL9vLBKl2ozEm7G05dWLG75x0uwP7snA9gx0lRmQhoxcZ7Sd9o5SzZjxpu2tZYmRFlRsVvgbM/Nq6tgWR6lzmZ0chZuDJwXOKeVUHi1Dlj5meXjbPnhUACFJ0gtwApN8NvMlUhX74RXyu/c7R+xnAM/NwFoQhy2S1WHrxGKO16uL6YnuawvijBnMQK2peA1pBHTa6/4q59Rd0TDa6ESJuerXEl4bOR7QrFwcUcMszJoEHwiG2G6uCJvHILtF1whNguAA0vMnar1j6eE/6y5ps4lPT+/me4EV6o+WiATuVq4ukVDMUXFU1w7C1F8qtaIrYViNdr2vl/h2KC1xUfPDwgzGygmsHuaV+RKRKZhvh+Rh7EP2VC7y/1TGiAstpQ+HRaXk4msi5x3ZLm0cOGrsw/vWzvTQ89Io6kpoECCrN7ZwBfIw8PVNx4wrEB412jz3CM7XKT7QL3MbzLv6uT1D3HtmexZNVysECje5YLnQW+RrH/6lFC0Vtn0MTRlO9JjOMIuomvBmy3grnZP5JHm/yTiBlgypQjYVU6dIA4Ob2mibOa3Vf242oZY2Zk2eH+NzhSfE034dvtbjk5o/JgmNoLRA7vK/9QXM7fY/oQCFU6FKaWKVOJOgY1MX4ejQeOksBrR0CgQt3QHI/4Bw2W0Ng+SsgS8gbS4Bj4SWOtLZotTw4yxfQh4zcuXtG5V95hw+/M6aNXogOC+7mz1GXkMPgm28RdkDFXhnD4O0ixfS2kZ8yjx1TTrvSOz/gkhxf/npOPFRwaO71ShqaCk+7JjU8DlmyqWGJx+GJgTCWDwkxUBjpA3Vf96EXmbV8Mch4TwUDLvXeVX6pXXDNSxIZB8YAvC6OTdFVDgXMv5KmVmskQHJJ6RZMfEFVtfhSjfYeo8Ypey+1MLIIQgRvhb2p6wEPoEUOoaG4xlWAVRTkxQpNJuVPF19IfswVjIBIyk1/PDKFJDEZ5nQqaR1tiZ0r7F0nYA28G7JnumLr5yMSdocS1KUISB9ytvo/r7bUnFquJcIBNqazl+oNyPKL1BDqPqxb/H4DjSnnAH9GPAKdJzwVzgXSHdXiKXS/jZCR89Dj02kL6ny5XEGDye6y9jLRtwwXPraK31qHViNPiFTL/SelydyREGklaxqTXRt+7gzJonFtOvX6G0iyNctDMIv2YYVJArMSOnmXA124CkDgH1tFc0AWXxdUHCkB+INW3gA+gwUVHrID7HUl37/ceF2tMfTjBA4u15pMoK2eAGSwn84iWFSBhQIObdog0WPcPwGJvWCEc4ulXHUi46g84nUkwNMQy6bLMnLqwRTgOrrHuHXaGlEtgI3AhvTqeIiiC657bO252RJ7JQClldravjVLv895mmjbQkiNEkMMiJn7X7/UMXV0YzYyarISzMixVani/ctiSFqtEAEiK/DAARCwjIagQbVLQu400EjYhnL0P0xDQCVnvQM2xCW2agBfaXz+LYxKu+gsk/LoWu7gV3lXaaZY0B+ppY0fYaebSIoJGSu7zHcS4V9+F0Mwn2fNIHFQ+9AxlhkM1FscZogoDxuyKux4N4VXr5SZxYkrZMvjMjQiWtAGYwL/Pkt+2iANZkXsu3ePsTtV7nDkGBU/9Z3OuvD0dOaoxSB6o6ZWsM8ISxvIsoN5TwHGfiu4ztkXBnfD0p/pgos4gNn76eCmcbuBLuWXcWij4S47FeYQGSGDA9TolpqtCdOq861vLslx7DPT76FpB3+FyjzgujuPczfKTrecMlzj15dwOe7IZ/nfhJg9YTARBSPkubCjQ5wVFB0aL1QzdmpLzwdza4pMvh+9qyYuW1m172XVXxigtKekChDw0TzCqfo3QGLb0VZpMxny5+oQpmBBw3RWlUG4AcQ0T/7bLdF9fi4zlHi9su/zSLsc/FPd58fxGf8bikM06sf+zMbrD79Zoa8Vq1oTZl77pk7y76Ialm7ZdZVIEFCc+aCD8z569b7ZsZPrsi99W97j5HJLrcXzWF9CpMi5Aup98dpBC+To2bTAQx3z2brP6HmP9sSBtZBuJpx7C6w5BLN/npTz35ZROWz5wWz82xmyZiJnmRm9+KqS1mWLUnuAF6HkGrNNMmNjOtxvAPjU6PNmpuuvdf76x8QYmmMIBy11+1ZvhEGiH/P1rom9lJkparIBG56p2fTl+Bfr5+CILf1iHEa04POSnRok8nXhqyJayI+zTaJKNvzo7Pg0IRpzgPeF/NGSKZvk2BS7bshdab2whk8AkW8W02zrl81n05iMmtX6IjbofSG1C1Y0kf2baIj5RvXdcFFFFkEQPrchLCo7UBLOL2qBnC4p9WAQLljaP5jw8mTGOH1dQRrzO72gV8iW5KIoIfFOFv+fTqHNMhMWCMcUc8bVvl6Ajeaq6VRq8Dc62hNxMlcaKtYN4q50nXXGBbb5VzkNszKw0ppsaXClwR+XYYGlcBpsYT43mQMNXGgrvsHwMefWtEWQtnhVVlN5ArkQXapzSXTVRhKjeB3fThXYDEpNc4lQ7HCogu6r+NKhgG822KZn/yGKW5P8ZRlJ5L9Nr34m+XR9ai7GLOGcWxYz90RyjLUEApVS21shuzSKEav5AlDSrm24Ipwf+lGpJNUa8JGsrlg6IT/ToSJfcBFc2U3A4kXYQzFoh5wSJFLe6KwHYWURwgLFvaO05ovR/zJXHiBxGMmlgH0dhn2EHoT1pLsmbycJ6Lg4kUeEJZK0YD38WL+7toBJE3VAnB/yLIUMJhTCQGiIuOtkMpnxqLQqk1EHw6bVkkAsbFxIAAAAA==" alt="爆裂タイピング ― アークウィザード・むぎりんのイラスト" style="display:block; width:100%; height:170px; object-fit:cover; border-radius:2px; margin-bottom:12px;"></a>
       <h3><a href="explosion.html"><span class="l-en">Explosion Typing</span><span class="l-ja">爆裂タイピング</span></a></h3>
-      <p><span class="l-en">A browser typing game. Type my assistant Mugirin's five-verse chant in romaji to unleash Explosion, the ultimate attack magic. Mana gauge, combo counter, and ranks from SS to C.</span><span class="l-ja">ブラウザで遊べるタイピングゲーム。助手むぎりんの詠唱・全5節をローマ字で打ち切り、最強の攻撃魔法「爆裂魔法」を放ちます。魔力ゲージとコンボ、SS〜Cのランク判定つき。</span></p>
+      <p><span class="l-en">A browser typing game: type Mugirin's chant in romaji to unleash Explosion.</span><span class="l-ja">むぎりんの詠唱をローマ字で打ち切り、爆裂魔法を放つブラウザタイピングゲーム。</span></p>
       <p class="small">HTML / CSS / JavaScript</p>
     </div>
   </div>
@@ -507,29 +378,20 @@
   <div class="skill-group">
     <h3><span class="l-en">Robotics</span><span class="l-ja">ロボティクス</span></h3>
     <span class="tag">ROS 2 (Humble)</span>
-    <span class="tag"><span class="l-en">Powered wheelchair control (WHILL Model CR)</span><span class="l-ja">電動車いす制御（WHILL Model CR）</span></span>
     <span class="tag"><span class="l-en">3D LiDAR obstacle detection</span><span class="l-ja">3D LiDAR障害物検知</span></span>
-    <span class="tag"><span class="l-en">State management &amp; safety design</span><span class="l-ja">状態管理と安全設計</span></span>
+    <span class="tag"><span class="l-en">Wheelchair control (WHILL)</span><span class="l-ja">電動車いす制御（WHILL）</span></span>
   </div>
   <div class="skill-group">
     <h3><span class="l-en">Programming</span><span class="l-ja">プログラミング</span></h3>
     <span class="tag">Python</span>
     <span class="tag">C++</span>
-    <span class="tag"><span class="l-en">GUI applications</span><span class="l-ja">GUIアプリケーション</span></span>
-    <span class="tag"><span class="l-en">UDP network communication</span><span class="l-ja">UDPネットワーク通信</span></span>
+    <span class="tag"><span class="l-en">GUI / UDP</span><span class="l-ja">GUI・UDP通信</span></span>
   </div>
   <div class="skill-group">
-    <h3><span class="l-en">Interaction</span><span class="l-ja">インタラクション</span></h3>
-    <span class="tag"><span class="l-en">Gaze tracking &amp; dwell-based selection</span><span class="l-ja">視線計測と滞留選択</span></span>
-    <span class="tag"><span class="l-en">Interface design for users with motor disabilities</span><span class="l-ja">運動障害のあるユーザー向けのインターフェース設計</span></span>
-  </div>
-  <div class="skill-group">
-    <h3><span class="l-en">Development &amp; Field work</span><span class="l-ja">開発環境・フィールドワーク</span></h3>
-    <span class="tag">Git / GitHub</span>
-    <span class="tag">Ubuntu / Linux</span>
-    <span class="tag">LaTeX</span>
-    <span class="tag"><span class="l-en">User evaluations at a special needs school</span><span class="l-ja">特別支援学校でのユーザー評価の設計と実施</span></span>
-    <span class="tag"><span class="l-en">Longitudinal training sessions</span><span class="l-ja">長期の訓練セッション</span></span>
+    <h3><span class="l-en">Interaction &amp; Field work</span><span class="l-ja">インタラクション・現場評価</span></h3>
+    <span class="tag"><span class="l-en">Gaze input / dwell selection</span><span class="l-ja">視線入力・滞留選択</span></span>
+    <span class="tag"><span class="l-en">User evaluation at a school</span><span class="l-ja">学校でのユーザー評価</span></span>
+    <span class="tag">Git / Linux / LaTeX</span>
   </div>
 </section>
 
@@ -537,28 +399,16 @@
   <div class="eyebrow">Career</div>
   <h2><span class="num">06</span><span class="l-en">Education &amp; Career</span><span class="l-ja">学歴・職歴</span></h2>
   <ul class="timeline">
-    <li><span class="when">Apr 2027 &ndash;</span><br><span class="l-en">Seiko Epson Corporation (scheduled to join).</span><span class="l-ja">セイコーエプソン株式会社（入社予定）。</span></li>
-    <li><span class="when">Apr 2025 &ndash; Mar 2027</span><br><span class="l-en">M.S. in Engineering (expected), Course of Mechatronics, Graduate School of Engineering, University of Yamanashi. Kotani&ndash;Watanabe Laboratory.</span><span class="l-ja">山梨大学大学院 工学専攻 メカトロニクスコース、修士（工学）取得見込み。小谷・渡辺研究室。</span></li>
-    <li><span class="when">Apr 2021 &ndash; Mar 2025</span><br><span class="l-en">B.Eng., Department of Mechatronics, Faculty of Engineering, University of Yamanashi.</span><span class="l-ja">山梨大学 工学部 メカトロニクス工学科、学士（工学）。</span></li>
-    <li><span class="when">&ndash; Mar 2021</span><br><span class="l-en">Nagano Prefectural Yashiro High School, Nagano, Japan.</span><span class="l-ja">長野県立屋代高等学校（長野県）。</span></li>
-  </ul>
-</section>
-
-<section id="news">
-  <div class="eyebrow">News</div>
-  <h2><span class="num">07</span><span class="l-en">News</span><span class="l-ja">ニュース</span></h2>
-  <ul class="timeline">
-    <li><span class="when">Jan 2027</span> — <span class="l-en">Oral presentation at SII 2027 in Kobe, Japan.</span><span class="l-ja">SII 2027（神戸）で口頭発表。</span></li>
-    <li><span class="when">Dec 2026</span> — <span class="l-en">Poster presentation (IS2-16) at ViEW2026 in Yokohama, Japan.</span><span class="l-ja">ViEW2026（横浜）でポスター発表（IS2-16）。</span></li>
-    <li><span class="when">Nov 2026</span> — <span class="l-en">This homepage was published on GitHub Pages.</span><span class="l-ja">このホームページをGitHub Pagesで公開しました。</span></li>
-    <li><span class="when">Oct 2026</span> — <span class="l-en">Our paper on the gaze-controlled wheelchair was accepted to SII 2027 as a Contributed Paper.</span><span class="l-ja">視線制御車いすの論文が、SII 2027にContributed Paperとして採択されました。</span></li>
+    <li><span class="when">Apr 2027 &ndash;</span><br><span class="l-en">Seiko Epson Corporation (joining)</span><span class="l-ja">セイコーエプソン株式会社（入社予定）</span></li>
+    <li><span class="when">Apr 2025 &ndash; Mar 2027</span><br><span class="l-en">M.Eng. (expected), Mechatronics, University of Yamanashi</span><span class="l-ja">山梨大学大学院 メカトロニクスコース（修了見込み）</span></li>
+    <li><span class="when">Apr 2021 &ndash; Mar 2025</span><br><span class="l-en">B.Eng., Mechatronics, University of Yamanashi</span><span class="l-ja">山梨大学 工学部 メカトロニクス工学科</span></li>
+    <li><span class="when">&ndash; Mar 2021</span><br><span class="l-en">Nagano Prefectural Yashiro High School</span><span class="l-ja">長野県屋代高等学校</span></li>
   </ul>
 </section>
 
 <section id="schedule">
   <div class="eyebrow">Schedule</div>
-  <h2><span class="num">08</span><span class="l-en">Schedule</span><span class="l-ja">予定</span></h2>
-  <p><span class="l-en">Public talks, presentations, and events. (Times in JST.)</span><span class="l-ja">公開してよい講演・発表・行事を載せています。（時刻は日本時間）</span></p>
+  <h2><span class="num">07</span><span class="l-en">Schedule</span><span class="l-ja">予定</span></h2>
   <div class="cal-wrap">
     <iframe src="https://calendar.google.com/calendar/embed?src=7aa6dac006a10469cfd571efb7c752d720950b82126288ac901f3972909d0460%40group.calendar.google.com&amp;ctz=Asia%2FTokyo" title="Public Schedule" loading="lazy"></iframe>
   </div>
@@ -566,41 +416,41 @@
 
 <section id="blog">
   <div class="eyebrow">Blog</div>
-  <h2><span class="num">09</span><span class="l-en">Latest Posts</span><span class="l-ja">最近の記事</span></h2>
+  <h2><span class="num">08</span><span class="l-en">Latest Posts</span><span class="l-ja">最近の記事</span></h2>
   <div class="grid">
-    <a class="post-card" href="blog.html#marugen-ramen">
+    <a class="post-card" href="blog/marugen-ramen.html">
       <div class="date">2026-11-12</div>
       <div class="ptitle"><span class="l-en">Marugen Ramen with Lab Members</span><span class="l-ja">研究室メンバーと丸源ラーメンへ</span></div>
       <div class="go"><span class="l-en">Read →</span><span class="l-ja">読む →</span></div>
     </a>
-    <a class="post-card" href="blog.html#view2026-program">
+    <a class="post-card" href="blog/view2026-program.html">
       <div class="date">2026-11-10</div>
       <div class="ptitle"><span class="l-en">ViEW2026 Program Announced</span><span class="l-ja">ViEW2026のプログラムが公開されました</span></div>
       <div class="go"><span class="l-en">Read →</span><span class="l-ja">読む →</span></div>
     </a>
-    <a class="post-card" href="blog.html#homepage">
+    <a class="post-card" href="blog/homepage.html">
       <div class="date">2026-11-10</div>
       <div class="ptitle"><span class="l-en">Homepage Published</span><span class="l-ja">ホームページを公開しました</span></div>
       <div class="go"><span class="l-en">Read →</span><span class="l-ja">読む →</span></div>
     </a>
-    <a class="post-card" href="blog.html#sii2027-accepted">
+    <a class="post-card" href="blog/sii2027-accepted.html">
       <div class="date">2026-10-31</div>
       <div class="ptitle"><span class="l-en">Paper Accepted to SII 2027</span><span class="l-ja">SII 2027に論文が採択されました</span></div>
       <div class="go"><span class="l-en">Read →</span><span class="l-ja">読む →</span></div>
     </a>
   </div>
-  <p style="margin-top:14px;"><span class="l-en">All posts are on the blog page. → <a href="blog.html">Read the Blog</a></span><span class="l-ja">記事の一覧はブログページにあります。→ <a href="blog.html">Blog を読む</a></span></p>
+  <p style="margin-top:14px;"><a href="blog.html"><span class="l-en">All posts →</span><span class="l-ja">記事一覧 →</span></a></p>
 </section>
 
 
 <section id="links">
   <div class="eyebrow">Links</div>
-  <h2><span class="num">10</span><span class="l-en">Links</span><span class="l-ja">リンク</span></h2>
+  <h2><span class="num">09</span><span class="l-en">Links</span><span class="l-ja">リンク</span></h2>
   <ul class="link-list">
     <li>GitHub: <a href="https://github.com/shiba0627">github.com/shiba0627</a></li>
-    <li>ROS 2 workspace: <a href="https://github.com/shiba0627/ros2_TOGAKUSHI2">ros2_TOGAKUSHI2</a></li>
-    <li><span class="l-en">Gaze-input GUI: </span><span class="l-ja">視線入力GUI：</span><a href="https://github.com/shiba0627/GUI_TOGAKUSHI2">GUI_TOGAKUSHI2</a></li>
-    <li>SII 2027: <a href="https://sii2027.sice-si.org/">sii2027.sice-si.org</a></li>
+    <li><span class="l-en">Contact: </span><span class="l-ja">連絡先：</span><a href="mailto:1e8ec3@gmail.com">1e8ec3@gmail.com</a></li>
+    <li><span class="l-en">Lab member: </span><span class="l-ja">研究室メンバー：</span><a href="https://mizukamitaiga.github.io/"><span class="l-en">Mizukami</span><span class="l-ja">水上君</span></a></li>
+    <li>SII 2027:<a href="https://sii2027.sice-si.org/">sii2027.sice-si.org</a></li>
   </ul>
 </section>
 
